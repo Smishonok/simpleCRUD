@@ -54,7 +54,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
                                                             Charset.forName("UTF-8"),
                                                             StandardOpenOption.WRITE,
                                                             StandardOpenOption.APPEND);
-            writer.write(this.prepareDataForSerialisation(region));
+            writer.write(this.createStringWithRegionData(region));
         } catch (IOException e) {
             log.error("Can`t write the region`s data into repository file: " + e.getMessage());
         }
@@ -99,7 +99,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
 
         regionsList.set(indexOfRegionInRegionsList, region);
 
-        rewriteInRepository(regionsList.stream().map(this::prepareDataForSerialisation)
+        rewriteInRepository(regionsList.stream().map(this::createStringWithRegionData)
                                        .collect(Collectors.toList()));
     }
 
@@ -133,7 +133,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
     }
 
     @Override
-    public boolean contains(Long regionId) {
+    public boolean isContains(Long regionId) {
         boolean isExists = false;
 
         try {
@@ -168,7 +168,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
         }
     }
 
-    private String prepareDataForSerialisation(Region region) {
+    private String createStringWithRegionData(Region region) {
         return REGION_ID + region.getId() + ";" + REGION_NAME + region.getName() + ";\n";
     }
 

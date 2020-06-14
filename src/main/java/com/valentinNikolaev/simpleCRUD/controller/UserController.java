@@ -47,7 +47,7 @@ public class UserController {
 
     public Optional<User> getUserById(String id) {
         long userId = Long.parseLong(id);
-        Optional<User> user = this.usersRepository.contains(userId) ? Optional.of(
+        Optional<User> user = this.usersRepository.isContains(userId) ? Optional.of(
                 this.usersRepository.get(userId)) : Optional.empty();
 
         return user;
@@ -79,7 +79,7 @@ public class UserController {
 
     public boolean changeUserFirstName(String userId, String newUserFirstName) {
         long id = Long.parseLong(userId);
-        if (this.usersRepository.contains(id)) {
+        if (this.usersRepository.isContains(id)) {
             User user = this.usersRepository.get(id);
             user.setFirstName(newUserFirstName);
             this.usersRepository.change(user);
@@ -89,7 +89,7 @@ public class UserController {
 
     public boolean changeUserLastName(String userId, String newUserLastName) {
         long id = Long.parseLong(userId);
-        if (this.usersRepository.contains(id)) {
+        if (this.usersRepository.isContains(id)) {
             User user = this.usersRepository.get(id);
             user.setLastName(newUserLastName);
             this.usersRepository.change(user);
@@ -99,7 +99,7 @@ public class UserController {
 
     public boolean changeUserRole(String userId, String newUserRole) {
         long id = Long.parseLong(userId);
-        if (this.usersRepository.contains(id)) {
+        if (this.usersRepository.isContains(id)) {
             User user = this.usersRepository.get(id);
             user.changeUserRole(newUserRole);
             this.usersRepository.change(user);
@@ -110,7 +110,7 @@ public class UserController {
     public boolean changeUserRegion(String userId, String regionName) {
         long   id     = Long.parseLong(userId);
         Region region = regionController.getRegionByName(regionName).get();
-        if (this.usersRepository.contains(id)) {
+        if (this.usersRepository.isContains(id)) {
             User user = this.usersRepository.get(id);
             user.setRegion(region);
             this.usersRepository.change(user);
@@ -129,7 +129,6 @@ public class UserController {
     private long getLastUserId() {
         Optional<Long> maxUserId  = getAllUsersList().stream().map(User::getId).max(
                 Long::compareTo);
-        long           lastUserId = maxUserId.isPresent() ? maxUserId.get() : 0;
-        return lastUserId;
+        return maxUserId.isPresent() ? maxUserId.get() : 0;
     }
 }

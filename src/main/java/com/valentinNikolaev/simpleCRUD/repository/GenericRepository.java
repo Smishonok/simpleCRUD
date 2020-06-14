@@ -16,6 +16,6 @@ public interface GenericRepository<T,ID> {
 
     boolean removeAll();
 
-    boolean contains(ID id);
+    boolean isContains(ID id);
 
 }

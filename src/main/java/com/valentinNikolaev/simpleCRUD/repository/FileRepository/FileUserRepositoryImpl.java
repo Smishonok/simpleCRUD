@@ -12,7 +12,6 @@ import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -65,7 +64,7 @@ public class FileUserRepositoryImpl implements UserRepository {
                                                              Charset.forName("UTF-8"),
                                                              StandardOpenOption.WRITE,
                                                              StandardOpenOption.APPEND)) {
-            writer.write(this.prepareDataForSerialisation(user));
+            writer.write(this.createStringWithUserData(user));
         } catch (IOException e) {
             log.error("Can`t write the user`s data into repository file: " + e.getMessage());
         }
@@ -109,7 +108,7 @@ public class FileUserRepositoryImpl implements UserRepository {
 
         usersList.set(indexOfUserInList, user);
 
-        rewriteInRepository(usersList.stream().map(this::prepareDataForSerialisation)
+        rewriteInRepository(usersList.stream().map(this::createStringWithUserData)
                                      .collect(Collectors.toList()));
         return get(user.getId());
     }
@@ -118,7 +117,7 @@ public class FileUserRepositoryImpl implements UserRepository {
     public boolean remove(Long id) {
         List<String> usersList = getUsersListExcludeUserWith(id);
         rewriteInRepository(usersList);
-        return ! contains(id);
+        return ! isContains(id);
     }
 
     @Override
@@ -153,7 +152,7 @@ public class FileUserRepositoryImpl implements UserRepository {
     }
 
     @Override
-    public boolean contains(Long id) {
+    public boolean isContains(Long id) {
         boolean isExist = false;
         try {
             isExist = Files.lines(usersRepositoryPath).anyMatch(
@@ -187,7 +186,7 @@ public class FileUserRepositoryImpl implements UserRepository {
         return usersList;
     }
 
-    private String prepareDataForSerialisation(User user) {
+    private String createStringWithUserData(User user) {
         return USER_ID + user.getId() + ";" + USER_FIRST_NAME + user.getFirstName() + ";" +
                 USER_LAST_NAME + user.getLastName() + ";" + REGION_ID + user.getRegion().getId() +
                 ";" + USERS_ROLE + user.getRole().toString() + ";\n";

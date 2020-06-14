@@ -28,20 +28,23 @@ public class PostController {
         log.debug("Posts repository implementation is: " + postRepository.getClass().getName());
     }
 
-    public void addPost(String userId, String content) {
+    public Post addPost(String userId, String content) {
+        log.debug("Start creating and adding new post into repository.");
         Optional<User> user = this.userController.getUserById(userId);
         if (user.isPresent()) {
-            long id   = Long.parseLong(userId);
-            Post post = new Post(id, content);
-            this.postRepository.add(post);
+            long postId    = this.getLastPostId() + 1;
+            Post addedPost = this.postRepository.add(
+                    new Post(postId, Long.parseLong(userId), content));
+            log.debug("New post with id: "+addedPost.getId()+" created and added into repository.");
+            return addedPost;
         } else {
             throw new IllegalArgumentException("The user with id: " + userId + " is not exists.");
         }
     }
 
     public Optional<Post> getPost(String postId) {
-        long           id   = Long.parseLong(postId);
-        Optional<Post> post = this.postRepository.contains(id) ? Optional.of(
+        long id = Long.parseLong(postId);
+        Optional<Post> post = this.postRepository.isContains(id) ? Optional.of(
                 this.postRepository.get(id)) : Optional.empty();
 
         return post;
@@ -58,7 +61,7 @@ public class PostController {
 
     public void changePost(String postId, String newContent) {
         long id = Long.parseLong(postId);
-        if (this.postRepository.contains(id)) {
+        if (this.postRepository.isContains(id)) {
             Post post = this.postRepository.get(id);
             post.setContent(newContent);
             this.postRepository.change(post);
@@ -77,5 +80,10 @@ public class PostController {
 
     public void removeAllPosts() {
         this.postRepository.removeAll();
+    }
+
+    private long getLastPostId() {
+        Optional<Long> maxPostId = getAllPostsList().stream().map(Post::getId).max(Long::compareTo);
+        return maxPostId.isPresent() ? maxPostId.get() : 0;
     }
 }

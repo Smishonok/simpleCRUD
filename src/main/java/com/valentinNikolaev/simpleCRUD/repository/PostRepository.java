@@ -8,7 +8,7 @@ public interface PostRepository extends GenericRepository<Post,Long> {
 
     List<Post> getPostsByUserId(Long userId);
 
-    void removePostsByUserId(Long userId);
+    boolean removePostsByUserId(Long userId);
 
 
 }

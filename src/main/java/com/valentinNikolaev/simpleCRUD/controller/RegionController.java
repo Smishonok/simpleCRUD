@@ -33,7 +33,7 @@ public class RegionController {
 
     public Optional<Region> getRegionById(String regionId) {
         long id = Long.parseLong(regionId);
-        Optional<Region> region = this.regionRepository.contains(id) ? Optional.of(
+        Optional<Region> region = this.regionRepository.isContains(id) ? Optional.of(
                 this.regionRepository.get(id)) : Optional.empty();
 
         return region;
@@ -56,7 +56,7 @@ public class RegionController {
 
     public void changeRegionName(String regionId, String newRegionName) {
         long id = Long.parseLong(regionId);
-        if (this.regionRepository.contains(id)) {
+        if (this.regionRepository.isContains(id)) {
             Region region = this.regionRepository.get(id);
             region.setName(newRegionName);
             this.regionRepository.change(region);

@@ -10,10 +10,8 @@ public class Post implements Comparable<Post> {
     private LocalDateTime created;
     private LocalDateTime updated;
 
-    private static long lastPostId = 0;
-
-    public Post(Long userId, String content) {
-        this.id      = ++ lastPostId;
+    public Post(long postId ,long userId, String content) {
+        this.id      = postId;
         this.userId  = userId;
         this.content = content;
         this.created = LocalDateTime.now();
@@ -105,16 +103,4 @@ public class Post implements Comparable<Post> {
 
         return post;
     }
-
-
-    public static void main(String[] args) {
-        long userId = 6545;
-        Post post = new Post(userId, "This is the text for checking out how is formatter " +
-                "work.");
-
-        System.out.println(post.toString());
-
-    }
-
-
 }
