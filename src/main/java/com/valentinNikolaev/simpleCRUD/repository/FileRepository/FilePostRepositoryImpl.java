@@ -1,7 +1,10 @@
 package com.valentinNikolaev.simpleCRUD.repository.FileRepository;
 
 import com.valentinNikolaev.simpleCRUD.models.Post;
+import com.valentinNikolaev.simpleCRUD.models.User;
 import com.valentinNikolaev.simpleCRUD.repository.PostRepository;
+import com.valentinNikolaev.simpleCRUD.repository.RepositoryManager;
+import com.valentinNikolaev.simpleCRUD.repository.UserRepository;
 import org.apache.log4j.Logger;
 
 import java.io.BufferedReader;
@@ -24,7 +27,8 @@ public class FilePostRepositoryImpl implements PostRepository {
 
     static Logger log = Logger.getLogger(FilePostRepositoryImpl.class);
 
-    private Path postsRepositoryPath;
+    private Path           postsRepositoryPath;
+    private UserRepository userRepository;
 
     //Post`s fields names for parsing
     private final String POST_ID       = "Post`s id:";
@@ -33,8 +37,9 @@ public class FilePostRepositoryImpl implements PostRepository {
     private final String UPDATING_DATE = "Post`s updating date:";
     private final String POST_CONTENT  = "Post`s content:";
 
-    public FilePostRepositoryImpl(Path repositoryRootPath) {
+    public FilePostRepositoryImpl(Path repositoryRootPath) throws ClassNotFoundException {
         postsRepositoryPath = repositoryRootPath.resolve("postsRepository.txt");
+        this.userRepository = RepositoryManager.getRepositoryFactory().getUserRepository();
         createPostsRepository();
     }
 
@@ -58,8 +63,7 @@ public class FilePostRepositoryImpl implements PostRepository {
     public Post add(Post post) {
         log.debug("The operation of adding the new post with id: " + post.getId() +
                           " in the repository is started.");
-        try (Writer writer = Files.newBufferedWriter(postsRepositoryPath,
-                                                     Charset.forName("UTF-8"),
+        try (Writer writer = Files.newBufferedWriter(postsRepositoryPath, Charset.forName("UTF-8"),
                                                      StandardOpenOption.WRITE,
                                                      StandardOpenOption.APPEND)) {
             writer.write(this.createStringWithPostData(post));
@@ -202,8 +206,8 @@ public class FilePostRepositoryImpl implements PostRepository {
 
     @Override
     public boolean isContains(Long postId) {
-        log.debug("The operation of checking existence in repository of post with id: "+postId+" " +
-                          "is started.");
+        log.debug("The operation of checking existence in repository of post with id: " + postId +
+                          " " + "is started.");
         boolean isExists = false;
         try {
             isExists = Files.lines(postsRepositoryPath).anyMatch(
@@ -211,7 +215,7 @@ public class FilePostRepositoryImpl implements PostRepository {
         } catch (IOException e) {
             log.error("Can`t read repository file with posts data: " + e.getMessage());
         }
-        log.debug("The operation was ended. The result of checking is: "+isExists);
+        log.debug("The operation was ended. The result of checking is: " + isExists);
         return isExists;
     }
 
@@ -252,7 +256,7 @@ public class FilePostRepositoryImpl implements PostRepository {
 
     private String createStringWithPostData(Post post) {
         long   postId  = post.getId();
-        long   userId  = post.getUserId();
+        User   user    = post.getUser();
         String content = post.getContent();
 
         long creationTimeInEpochSeconds = post.getCreatingDateAndTime().toEpochSecond(
@@ -261,7 +265,7 @@ public class FilePostRepositoryImpl implements PostRepository {
                 ZoneOffset.UTC);
 
 
-        return POST_ID + postId + ";" + USER_ID + userId + ";" + CREATION_DATE +
+        return POST_ID + postId + ";" + USER_ID + user.getId() + ";" + CREATION_DATE +
                 creationTimeInEpochSeconds + ";" + UPDATING_DATE + updatingTimeInEpochSeconds +
                 ";" + POST_CONTENT + content + ";\n";
     }
@@ -323,11 +327,11 @@ public class FilePostRepositoryImpl implements PostRepository {
         }
 
         long          postId       = parsePostId(postData);
-        long          userId       = parseUserId(postData);
+        User          user         = this.userRepository.get(parseUserId(postData));
         LocalDateTime creationDate = parseDateTime(CREATION_DATE, postData);
         LocalDateTime updatingDate = parseDateTime(UPDATING_DATE, postData);
         String        content      = parseContent(postData);
 
-        return new Post(postId, userId, content, creationDate, updatingDate);
+        return new Post(postId, user, content, creationDate, updatingDate);
     }
 }

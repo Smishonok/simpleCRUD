@@ -34,7 +34,7 @@ public class PostController {
         if (user.isPresent()) {
             long postId    = this.getLastPostId() + 1;
             Post addedPost = this.postRepository.add(
-                    new Post(postId, Long.parseLong(userId), content));
+                    new Post(postId, user.get(), content));
             log.debug("New post with id: "+addedPost.getId()+" created and added into repository.");
             return addedPost;
         } else {
