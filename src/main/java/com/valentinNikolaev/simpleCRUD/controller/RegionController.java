@@ -20,11 +20,10 @@ public class RegionController {
 
     public Region addRegion(String name) {
         log.debug("The operation of adding a new region with name: "+name+" is started.");
-        Region region = new Region(getLastRegionId() + 1, name);
-        Region addedRegion = regionRepository.add(region);
-        log.debug("The operation was ended, region with id: "+addedRegion.getId()+" was added " +
+        Region region = regionRepository.add(new Region(getLastRegionId() + 1, name));
+        log.debug("The operation was ended, region with id: "+region.getId()+" was added " +
                           "into repository.");
-        return addedRegion;
+        return region;
     }
 
     public Optional<Region> getRegionById(String regionId) {
