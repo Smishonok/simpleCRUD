@@ -1,5 +1,6 @@
 package com.valentinNikolaev.simpleCRUD.view;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class RequestHandler {
@@ -9,7 +10,6 @@ public abstract class RequestHandler {
     protected final String CHANGE = "change";
     protected final String REMOVE = "remove";
     protected final String                     HELP   = "help";
-    private         RequestParametersProcessor stringProcessor;
 
     private RequestHandler nextRequestHandler;
 
@@ -17,7 +17,6 @@ public abstract class RequestHandler {
 
     public RequestHandler(RequestHandler nextRequestHandler) {
         this.nextRequestHandler = nextRequestHandler;
-        stringProcessor = new RequestParametersProcessor();
     }
 
     public abstract void handleRequest(String action, List<String> options)
@@ -47,10 +46,12 @@ public abstract class RequestHandler {
     public abstract void getHelp();
 
     public List<String> getOptionsWithOutFirst(List<String> options) {
-        return stringProcessor.getOptionsWithOutFirst(options);
+        RequestParametersProcessor stringProcessor = new RequestParametersProcessor();
+        return stringProcessor.getOptionsWithOutFirst(new ArrayList<>());
     }
 
     protected boolean isLong(String string) {
+        RequestParametersProcessor stringProcessor = new RequestParametersProcessor();
         return stringProcessor.isLong(string);
     }
 

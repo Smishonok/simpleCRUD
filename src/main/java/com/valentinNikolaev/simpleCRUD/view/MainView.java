@@ -52,7 +52,7 @@ public class MainView {
         List<String> requestParams  = Arrays.asList(request.split(" "));
         String       requestType    = requestParams.size() > 0 ? requestParams.get(0) : "";
         String       requestOrder   = requestParams.size() > 1 ? requestParams.get(1) : "";
-        List<String> requestOptions = gerRequestOptions(requestParams);
+        List<String> requestOptions = getRequestOptions(requestParams);
 
         switch (requestType) {
             case POST:
@@ -76,7 +76,7 @@ public class MainView {
         }
     }
 
-    private List<String> gerRequestOptions(List<String> requestParams) {
+    private List<String> getRequestOptions(List<String> requestParams) {
         List<String> requestOptions = new ArrayList<>();
         if (requestParams.size() > 2) {
             for (int i = 2; i < requestParams.size(); i++) {
@@ -88,12 +88,14 @@ public class MainView {
 
     private void getHelpInformation() {
         String helpInfo = "This is the part of the console app in which you can add, change and " +
-                "remove posts from repository. The main commands are:\n" +
-                "\tadd - adding new post;\n" + "\tget - getting posts from repository;\n" +
-                "\tchange - changing posts in repository;\n" +
-                "\tremove - removing posts from repository;\n" + "\n\tCalling \"" + HELP +
-                "\" after each of commands calls the help`s " +
-                "information for the corresponding command.";
+                "remove users, regions and posts from repository. The request format is: [request" +
+                " type] [order] [order options]. The main types of requests are:" +
+                "  :\n" +
+                "\tuser - adding, changing and removing users data\n" +
+                "\tpost - adding, changing and removing posts;\n" +
+                "\tregion - adding, changing and removing regions;\n" + "\n\tCalling \"" + HELP +
+                "\" after each of request type calls the help`s " +
+                "information for the corresponding type.";
         System.out.println(helpInfo);
     }
 

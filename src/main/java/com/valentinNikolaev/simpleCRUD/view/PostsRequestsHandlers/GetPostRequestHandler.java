@@ -36,7 +36,7 @@ public class GetPostRequestHandler extends PostRequestHandler {
             requestType = options.get(0);
         }
 
-        List<String> requestOptions = getOptionsWithOutFirst(options);
+        List<String> requestOptions = super.getOptionsWithOutFirst(options);
 
         switch (requestType) {
             case HELP:
