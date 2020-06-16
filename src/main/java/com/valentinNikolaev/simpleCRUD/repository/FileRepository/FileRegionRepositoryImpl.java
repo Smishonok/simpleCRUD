@@ -4,6 +4,7 @@ import com.valentinNikolaev.simpleCRUD.models.Region;
 import com.valentinNikolaev.simpleCRUD.repository.RegionRepository;
 import org.apache.log4j.Logger;
 
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -48,7 +49,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
     }
 
     @Override
-    public void add(Region region) {
+    public Region add(Region region) {
         try {
             BufferedWriter writer = Files.newBufferedWriter(regionRepositoryPath,
                                                             Charset.forName("UTF-8"),
@@ -59,6 +60,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
             log.error("Can`t write the region`s data into repository file: " + e.getMessage());
         }
 
+        return this.get(region.getId());
     }
 
     @Override
@@ -82,7 +84,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
     }
 
     @Override
-    public void change(Region region) {
+    public Region change(Region region) {
         List<Region> regionsList = getAll();
 
         int indexOfRegionInRegionsList = - 1;
@@ -98,15 +100,17 @@ public class FileRegionRepositoryImpl implements RegionRepository {
         }
 
         regionsList.set(indexOfRegionInRegionsList, region);
-
         rewriteInRepository(regionsList.stream().map(this::createStringWithRegionData)
                                        .collect(Collectors.toList()));
+
+        return this.get(region.getId());
     }
 
     @Override
-    public void remove(Long regionId) {
+    public boolean remove(Long regionId) {
         List<String> regionsList = getRegionsListExcludeRegionWith(regionId);
         rewriteInRepository(regionsList);
+        return ! this.isContains(regionId);
     }
 
     @Override
@@ -116,7 +120,7 @@ public class FileRegionRepositoryImpl implements RegionRepository {
     }
 
     @Override
-    public void removeAll() {
+    public boolean removeAll() {
         if (Files.exists(regionRepositoryPath)) {
             try {
                 Files.delete(regionRepositoryPath);
@@ -130,6 +134,14 @@ public class FileRegionRepositoryImpl implements RegionRepository {
         } catch (IOException e) {
             log.error("The repository file can`t be created: " + e.getMessage());
         }
+
+        boolean isEmpty= false;
+        try (BufferedReader reader = Files.newBufferedReader(this.regionRepositoryPath)) {
+            isEmpty = reader.read() == - 1;
+        } catch (IOException e) {
+            log.error("The repository file can`t be read: "+ e.getMessage());
+        }
+        return isEmpty;
     }
 
     @Override
@@ -149,7 +161,8 @@ public class FileRegionRepositoryImpl implements RegionRepository {
         List<String> regionsList = new ArrayList<>();
         try {
             regionsList = Files.lines(regionRepositoryPath).filter(
-                    regionData->this.parseRegionId(regionData) != regionId).collect(Collectors.toList());
+                    regionData->this.parseRegionId(regionData) != regionId).collect(
+                    Collectors.toList());
         } catch (IOException e) {
             log.error("Can`t read repository file with regions data: " + e.getMessage());
         }

@@ -18,17 +18,13 @@ public class RegionController {
         initRegionRepository();
     }
 
-    private void initRegionRepository() throws ClassNotFoundException {
-        log.debug("Starting initialisation of Region repository");
-        regionRepository = RepositoryManager.getRepositoryFactory().getRegionRepository();
-        log.debug("Region repository implementation is: " + regionRepository.getClass().getName());
-    }
-
-    public void addRegion(String name) {
-        log.debug("Adding new region into repository.");
-        Region region = new Region(name);
-        regionRepository.add(region);
-        log.debug("Adding the new region into the repository ended successfully.");
+    public Region addRegion(String name) {
+        log.debug("The operation of adding a new region with name: "+name+" is started.");
+        Region region = new Region(getLastRegionId() + 1, name);
+        Region addedRegion = regionRepository.add(region);
+        log.debug("The operation was ended, region with id: "+addedRegion.getId()+" was added " +
+                          "into repository.");
+        return addedRegion;
     }
 
     public Optional<Region> getRegionById(String regionId) {
@@ -40,7 +36,7 @@ public class RegionController {
     }
 
     public Optional<Region> getRegionByName(String regionName) {
-        List<Region>     regionsList     = this.regionRepository.getAll();
+        List<Region> regionsList = this.regionRepository.getAll();
 
         int indexOfRequestedRegion = - 1;
         for (int i = 0; i < regionsList.size(); i++) {
@@ -54,30 +50,43 @@ public class RegionController {
         return requestedRegion;
     }
 
-    public void changeRegionName(String regionId, String newRegionName) {
+    public boolean changeRegionName(String regionId, String newRegionName) {
         long id = Long.parseLong(regionId);
         if (this.regionRepository.isContains(id)) {
             Region region = this.regionRepository.get(id);
             region.setName(newRegionName);
             this.regionRepository.change(region);
         }
+        return this.regionRepository.get(id).getName().equals(newRegionName);
     }
 
-    public void removeRegionWithId(String regionId) {
+    public boolean removeRegionWithId(String regionId) {
         long id = Long.parseLong(regionId);
-        log.debug("Removing the region with name '" + id + "' from repository.");
-        regionRepository.remove(id);
-        log.debug("Removing operation is ended.");
+        boolean isRegionRemoved = regionRepository.remove(id);
+        return isRegionRemoved;
     }
 
-    public void removeAllRegions() {
+    public boolean removeAllRegions() {
         log.debug("Removing all regions from repository.");
-        regionRepository.removeAll();
+        boolean isAllRegionsRemoved = regionRepository.removeAll();
+        return isAllRegionsRemoved;
     }
 
     public List<Region> getAllRegions() {
         log.debug("Getting list of all regions from repository.");
         List<Region> regionList = regionRepository.getAll();
         return regionList;
+    }
+
+    private void initRegionRepository() throws ClassNotFoundException {
+        log.debug("Starting initialisation of Region repository");
+        regionRepository = RepositoryManager.getRepositoryFactory().getRegionRepository();
+        log.debug("Region repository implementation is: " + regionRepository.getClass().getName());
+    }
+
+    private long getLastRegionId() {
+        Optional<Long> lastRegionId = this.regionRepository.getAll().stream().map(Region::getId)
+                                                           .max(Long::compareTo);
+        return lastRegionId.isPresent() ? lastRegionId.get() : 0;
     }
 }

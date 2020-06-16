@@ -6,13 +6,6 @@ public class Region {
     private long   id;
     private String name;
 
-    private static long lastRegionId = 0;
-
-    public Region(String name) {
-        this.id   = ++ lastRegionId;
-        this.name = name;
-    }
-
     public Region(long id, String name) {
         this.id   = id;
         this.name = name;

@@ -59,27 +59,31 @@ public class PostController {
         return this.postRepository.getPostsByUserId(id);
     }
 
-    public void changePost(String postId, String newContent) {
+    public boolean changePost(String postId, String newContent) {
         long id = Long.parseLong(postId);
         if (this.postRepository.isContains(id)) {
             Post post = this.postRepository.get(id);
             post.setContent(newContent);
             this.postRepository.change(post);
         }
+        return this.postRepository.get(id).getContent().equals(newContent);
     }
 
-    public void removePost(String postId) {
+    public boolean removePost(String postId) {
         long id = Long.parseLong(postId);
-        this.postRepository.remove(id);
+        boolean isPostRemoved = this.postRepository.remove(id);
+        return isPostRemoved;
     }
 
-    public void removeAllPostByUser(String userId) {
+    public boolean removeAllPostByUser(String userId) {
         long id = Long.parseLong(userId);
-        this.postRepository.removePostsByUserId(id);
+        boolean isAllUserPostsRemoved = this.postRepository.removePostsByUserId(id);
+        return isAllUserPostsRemoved;
     }
 
-    public void removeAllPosts() {
-        this.postRepository.removeAll();
+    public boolean removeAllPosts() {
+        boolean isAllPostsRemoved = this.postRepository.removeAll();
+        return isAllPostsRemoved;
     }
 
     private long getLastPostId() {
