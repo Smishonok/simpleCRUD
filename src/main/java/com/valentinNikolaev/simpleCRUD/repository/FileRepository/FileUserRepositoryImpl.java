@@ -13,6 +13,7 @@ import org.apache.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -60,11 +61,12 @@ public class FileUserRepositoryImpl implements UserRepository {
 
     @Override
     public User add(User user) {
-        try (BufferedWriter writer = Files.newBufferedWriter(usersRepositoryPath,
-                                                             Charset.forName("UTF-8"),
-                                                             StandardOpenOption.WRITE,
-                                                             StandardOpenOption.APPEND)) {
+        try (Writer writer = Files.newBufferedWriter(usersRepositoryPath,
+                                                     Charset.forName("UTF-8"),
+                                                     StandardOpenOption.WRITE,
+                                                     StandardOpenOption.APPEND)) {
             writer.write(this.createStringWithUserData(user));
+            writer.flush();
         } catch (IOException e) {
             log.error("Can`t write the user`s data into repository file: " + e.getMessage());
         }

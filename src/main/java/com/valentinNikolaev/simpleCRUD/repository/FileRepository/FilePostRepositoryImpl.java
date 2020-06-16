@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -57,11 +58,12 @@ public class FilePostRepositoryImpl implements PostRepository {
     public Post add(Post post) {
         log.debug("The operation of adding the new post with id: " + post.getId() +
                           " in the repository is started.");
-        try (BufferedWriter writer = Files.newBufferedWriter(postsRepositoryPath,
-                                                             Charset.forName("UTF-8"),
-                                                             StandardOpenOption.WRITE,
-                                                             StandardOpenOption.APPEND)) {
+        try (Writer writer = Files.newBufferedWriter(postsRepositoryPath,
+                                                     Charset.forName("UTF-8"),
+                                                     StandardOpenOption.WRITE,
+                                                     StandardOpenOption.APPEND)) {
             writer.write(this.createStringWithPostData(post));
+            writer.flush();
         } catch (IOException e) {
             log.error("Can`t write the post`s data into repository file: " + e.getMessage());
         }

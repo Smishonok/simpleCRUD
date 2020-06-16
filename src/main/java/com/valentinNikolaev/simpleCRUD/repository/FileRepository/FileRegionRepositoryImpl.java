@@ -7,7 +7,9 @@ import org.apache.log4j.Logger;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
+import java.io.Writer;
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.StandardOpenOption;
@@ -24,8 +26,8 @@ public class FileRegionRepositoryImpl implements RegionRepository {
     private Path regionRepositoryPath;
 
     //Region`s fields names for parsing
-    private final String REGION_ID   = "Post`s id:";
-    private final String REGION_NAME = "User`s id:";
+    private final String REGION_ID   = "Region id:";
+    private final String REGION_NAME = "Region name:";
 
     public FileRegionRepositoryImpl(Path repositoryRootPath) {
         this.regionRepositoryPath = repositoryRootPath.resolve("regionRepository.txt");
@@ -51,11 +53,11 @@ public class FileRegionRepositoryImpl implements RegionRepository {
     @Override
     public Region add(Region region) {
         try {
-            BufferedWriter writer = Files.newBufferedWriter(regionRepositoryPath,
+            Writer writer = Files.newBufferedWriter(regionRepositoryPath,
                                                             Charset.forName("UTF-8"),
-                                                            StandardOpenOption.WRITE,
                                                             StandardOpenOption.APPEND);
             writer.write(this.createStringWithRegionData(region));
+            writer.flush();
         } catch (IOException e) {
             log.error("Can`t write the region`s data into repository file: " + e.getMessage());
         }

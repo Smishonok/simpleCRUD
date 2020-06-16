@@ -44,7 +44,7 @@ public class RegionController {
             }
         }
 
-        Optional<Region> requestedRegion = indexOfRequestedRegion != 1 ? Optional.of(
+        Optional<Region> requestedRegion = indexOfRequestedRegion != - 1 ? Optional.of(
                 regionsList.get(indexOfRequestedRegion)) : Optional.empty();
         return requestedRegion;
     }

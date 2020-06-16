@@ -12,7 +12,7 @@ public final class RepositoryManager {
 
     static Logger log = Logger.getLogger(RepositoryManager.class.getName());
 
-    private static final String DEFAULT_REPOSITORY_FACTORY = "JavaIORepository";
+    private static final String DEFAULT_REPOSITORY_FACTORY = "FileRepository";
 
     public static RepositoryFactory getRepositoryFactory() throws ClassNotFoundException {
         log.debug("Start to choose the repository factory.");
@@ -22,7 +22,7 @@ public final class RepositoryManager {
         //Switch used in this case with a look into the future, if another repository
         //implementations will be added in this project.
         switch (repositoryFactoryName) {
-            case "JavaIORepository":
+            case "FileRepository":
                 repositoryFactory = new FileRepositoryFactory();
                 break;
             default:

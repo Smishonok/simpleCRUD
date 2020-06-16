@@ -11,10 +11,13 @@ public class User {
     private Role   role;
     List<Post> posts;
 
+    private final Role DEFAULT_ROLE = Role.USER;
+
     public User(long id, String firstName, String lastName, Region region) {
         this.id        = id;
         this.firstName = firstName;
         this.lastName  = lastName;
+        this.role      = DEFAULT_ROLE;
         this.region    = region;
         posts          = new ArrayList<>();
     }

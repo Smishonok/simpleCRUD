@@ -1,6 +1,8 @@
 package com.valentinNikolaev.simpleCRUD.view;
 
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -25,7 +27,7 @@ public class MainView {
         requestParametersProcessor = new RequestParametersProcessor();
     }
 
-    public void initiateMainView() {
+    public void initiateMainView() throws ClassNotFoundException {
         System.out.println(
                 "Hello, this is the simpleCRUDE app. This app created  in order to learn " +
                         "use to NIO package, streams API, lambda expressions, file`s input and " +
@@ -35,7 +37,7 @@ public class MainView {
                         "post`s content;\n" + "\tremove data from the repository.\n" +
                         "\nFor using this app you should enter the commands in command`s line. " +
                         "The commands " + "should contain the words which delimited by white " +
-                        "spaces.\n" + "\nFor getting help information to enter \"help\"");
+                        "spaces.\n" + "\nFor getting help information to enter \"help\"\n\n");
         requestType = "start";
         while (requestType != EXIT) {
             Scanner commandScanner = new Scanner(System.in);
@@ -46,27 +48,53 @@ public class MainView {
         }
     }
 
-    private String processRequest(String request) {
-        String requestType = getRequestType(request);
-        String requestOrder = getRequestOrder(request);
-        List<String> requestOptions = gerRequestOptions(request);
+    private void processRequest(String request) throws ClassNotFoundException {
+        List<String> requestParams  = Arrays.asList(request.split(" "));
+        String       requestType    = requestParams.size() > 0 ? requestParams.get(0) : "";
+        String       requestOrder   = requestParams.size() > 1 ? requestParams.get(1) : "";
+        List<String> requestOptions = gerRequestOptions(requestParams);
 
         switch (requestType) {
-
+            case POST:
+                this.postView.action(requestOrder, requestOptions);
+                break;
+            case REGION:
+                this.regionView.action(requestOrder, requestOptions);
+                break;
+            case USER:
+                this.userView.action(requestOrder, requestOptions);
+                break;
+            case HELP:
+                getHelpInformation();
+                break;
+            case EXIT:
+                this.requestType = "exit";
+                break;
+            default:
+                getErrorMessage();
+                break;
         }
-
     }
 
-    private List<String> gerRequestOptions(String request) {
-
+    private List<String> gerRequestOptions(List<String> requestParams) {
+        List<String> requestOptions = new ArrayList<>();
+        if (requestParams.size() > 2) {
+            for (int i = 2; i < requestParams.size(); i++) {
+                requestOptions.add(requestParams.get(i));
+            }
+        }
+        return requestOptions;
     }
 
-    private String getRequestOrder(String request) {
-
-    }
-
-    private String getRequestType(String request) {
-
+    private void getHelpInformation() {
+        String helpInfo = "This is the part of the console app in which you can add, change and " +
+                "remove posts from repository. The main commands are:\n" +
+                "\tadd - adding new post;\n" + "\tget - getting posts from repository;\n" +
+                "\tchange - changing posts in repository;\n" +
+                "\tremove - removing posts from repository;\n" + "\n\tCalling \"" + HELP +
+                "\" after each of commands calls the help`s " +
+                "information for the corresponding command.";
+        System.out.println(helpInfo);
     }
 
 

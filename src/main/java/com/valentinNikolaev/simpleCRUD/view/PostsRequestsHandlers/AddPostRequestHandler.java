@@ -32,16 +32,15 @@ public class AddPostRequestHandler extends PostRequestHandler {
     }
 
     private void processRequest(List<String> options) {
-        int optionsSize = options.size();
-        switch (optionsSize) {
-            case 1:
-                getHelpForAddingPostRequest(options);
-                break;
-            case 2:
-                addPost(options);
-                break;
-            default:
-                this.getErrorMessage();
+        if (options.size() == 0) {
+            this.getErrorMessage();
+            return;
+        }
+
+        if (options.size() == 1) {
+            getHelpForAddingPostRequest(options);
+        } else {
+            addPost(options);
         }
     }
 
@@ -49,10 +48,15 @@ public class AddPostRequestHandler extends PostRequestHandler {
         Optional<User> user = this.userController.getUserById(options.get(0));
 
         if (user.isPresent()) {
-            this.postController.addPost(options.get(0), options.get(1));
+            StringBuilder post = new StringBuilder();
+            for (int i = 1; i < options.size(); i++) {
+                post.append(" ").append(options.get(i));
+            }
+            this.postController.addPost(options.get(0), post.toString());
         } else {
-            System.out.println("User with id: "+options.get(0)+" is not exists in repository. " +
-                                       "Check user id and try again.");
+            System.out.println(
+                    "User with id: " + options.get(0) + " is not exists in repository. " +
+                            "Check user id and try again.");
         }
     }
 
