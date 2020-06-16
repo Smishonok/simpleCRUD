@@ -5,23 +5,22 @@ import java.time.format.DateTimeFormatter;
 
 public class Post implements Comparable<Post> {
     private long          id;
-    private long          userId;
+    private User          user;
     private String        content;
     private LocalDateTime created;
     private LocalDateTime updated;
 
-    public Post(long postId ,long userId, String content) {
+    public Post(long postId, User user, String content) {
         this.id      = postId;
-        this.userId  = userId;
+        this.user    = user;
         this.content = content;
         this.created = LocalDateTime.now();
         this.updated = this.created;
     }
 
-    public Post(long id, Long userId, String content, LocalDateTime created,
-                LocalDateTime updated) {
+    public Post(long id, User user, String content, LocalDateTime created, LocalDateTime updated) {
         this.id      = id;
-        this.userId  = userId;
+        this.user    = user;
         this.content = content;
         this.created = created;
         this.updated = updated;
@@ -31,8 +30,8 @@ public class Post implements Comparable<Post> {
         return id;
     }
 
-    public long getUserId() {
-        return userId;
+    public User getUser() {
+        return user;
     }
 
     public String getContent() {
@@ -54,7 +53,7 @@ public class Post implements Comparable<Post> {
 
     @Override
     public int hashCode() {
-        int hash = this.content.hashCode() + (int) userId + created.hashCode() + updated.hashCode();
+        int hash = this.content.hashCode() + user.hashCode() + created.hashCode() + updated.hashCode();
         return hash;
     }
 
@@ -74,7 +73,7 @@ public class Post implements Comparable<Post> {
 
         Post comparingObj = (Post) obj;
         return this.content.equals(comparingObj.content) &&
-                this.userId == comparingObj.getUserId() && this.created.equals(
+                this.user.equals(comparingObj) && this.created.equals(
                 comparingObj.getCreatingDateAndTime()) && this.updated.equals(
                 comparingObj.getUpdatingDateAndTime());
     }
@@ -90,17 +89,7 @@ public class Post implements Comparable<Post> {
 
     @Override
     public String toString() {
-        DateTimeFormatter formatter    = DateTimeFormatter.ofPattern("dd MM yyyy hh:mm a");
-        String            creationTime = this.created.format(formatter);
-        String            updatingTime = this.updated.format(formatter);
-
-        String post =
-                "\tPost id: " + this.id + "\tUser id: " + this.userId + "\n\tDate of creation: " +
-                        creationTime + "\n\tDate of last updating: " + updatingTime + "\n\tPost" +
-                        ":\n\t\t" +
-                        this.content;
-
-
-        return post;
+        return "Post{" + "id=" + id + ", user=" + user + ", content='" + content + '\'' +
+                ", created=" + created + ", updated=" + updated + '}';
     }
 }
