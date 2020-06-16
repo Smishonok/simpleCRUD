@@ -16,20 +16,20 @@ public final class RepositoryManager {
 
     public static RepositoryFactory getRepositoryFactory() throws ClassNotFoundException {
         log.debug("Start to choose the repository factory.");
-        RepositoryFactory repositoryFactory;
-        String            repositoryFactoryName = getRepositoryFactoryName();
+        String repositoryFactoryName = getRepositoryFactoryName();
 
         //Switch used in this case with a look into the future, if another repository
         //implementations will be added in this project.
+        RepositoryFactory repositoryFactory;
         switch (repositoryFactoryName) {
             case "FileRepository":
-                repositoryFactory = new FileRepositoryFactory();
+                repositoryFactory = FileRepositoryFactory.getFactory();
                 break;
             default:
                 throw new ClassNotFoundException();
         }
 
-        log.debug("Chosen repository factory is: "+ repositoryFactory.getClass().getName());
+        log.debug("Chosen repository factory is: " + repositoryFactory.getClass().getName());
         return repositoryFactory;
     }
 
@@ -39,19 +39,20 @@ public final class RepositoryManager {
         if (isConfigFileExists()) {
             log.debug("Getting the repository factory`s name from config file.");
             Properties config = getProperties();
-            repositoryFactoryName = config.getProperty("RepositoryFactory", DEFAULT_REPOSITORY_FACTORY);
+            repositoryFactoryName = config.getProperty("RepositoryFactory",
+                                                       DEFAULT_REPOSITORY_FACTORY);
         } else {
             log.debug("Getting the default repository factory`s name.");
             repositoryFactoryName = DEFAULT_REPOSITORY_FACTORY;
         }
-        log.debug("Chosen repository factory`s name is: "+ repositoryFactoryName);
+        log.debug("Chosen repository factory`s name is: " + repositoryFactoryName);
         return repositoryFactoryName;
     }
 
     private static boolean isConfigFileExists() {
         log.debug("Checking is the properties file exists.");
         File config = new File("src/main/resources/config.properties");
-        log.debug("Checking result is: "+ config.exists());
+        log.debug("Checking result is: " + config.exists());
         return config.exists();
     }
 

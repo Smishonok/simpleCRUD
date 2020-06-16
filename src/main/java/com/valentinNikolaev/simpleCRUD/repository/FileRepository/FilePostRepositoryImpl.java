@@ -3,6 +3,7 @@ package com.valentinNikolaev.simpleCRUD.repository.FileRepository;
 import com.valentinNikolaev.simpleCRUD.models.Post;
 import com.valentinNikolaev.simpleCRUD.models.User;
 import com.valentinNikolaev.simpleCRUD.repository.PostRepository;
+import com.valentinNikolaev.simpleCRUD.repository.RepositoryFactory;
 import com.valentinNikolaev.simpleCRUD.repository.RepositoryManager;
 import com.valentinNikolaev.simpleCRUD.repository.UserRepository;
 import org.apache.log4j.Logger;
@@ -39,7 +40,13 @@ public class FilePostRepositoryImpl implements PostRepository {
 
     public FilePostRepositoryImpl(Path repositoryRootPath) throws ClassNotFoundException {
         postsRepositoryPath = repositoryRootPath.resolve("postsRepository.txt");
-        this.userRepository = RepositoryManager.getRepositoryFactory().getUserRepository();
+        this.userRepository = RepositoryManager.getRepositoryFactory().getUserRepository(this);
+        createPostsRepository();
+    }
+
+    public FilePostRepositoryImpl(Path repositoryRootPath, UserRepository userRepository) throws ClassNotFoundException {
+        postsRepositoryPath = repositoryRootPath.resolve("postsRepository.txt");
+        this.userRepository = userRepository;
         createPostsRepository();
     }
 
@@ -259,9 +266,9 @@ public class FilePostRepositoryImpl implements PostRepository {
         User   user    = post.getUser();
         String content = post.getContent();
 
-        long creationTimeInEpochSeconds = post.getCreatingDateAndTime().toEpochSecond(
+        long creationTimeInEpochSeconds = post.getDateOfCreation().toEpochSecond(
                 ZoneOffset.UTC);
-        long updatingTimeInEpochSeconds = post.getUpdatingDateAndTime().toEpochSecond(
+        long updatingTimeInEpochSeconds = post.getDateOfLastUpdate().toEpochSecond(
                 ZoneOffset.UTC);
 
 

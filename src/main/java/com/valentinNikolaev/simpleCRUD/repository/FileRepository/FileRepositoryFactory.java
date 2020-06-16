@@ -15,26 +15,63 @@ public class FileRepositoryFactory implements RepositoryFactory {
 
     public static Logger log = Logger.getLogger(FileRepositoryFactory.class);
 
-    private Path repositoryRootPath;
+    private static FileRepositoryFactory fileRepositoryFactory;
 
-    public FileRepositoryFactory() {
+    private Path                     repositoryRootPath;
+    private FileUserRepositoryImpl   fileUserRepository;
+    private FilePostRepositoryImpl   filePostRepository;
+    private FileRegionRepositoryImpl fileRegionRepository;
+
+    private FileRepositoryFactory() {
         getFilesRepositoryPath();
         createRepositoryDirectory();
     }
 
-    @Override
-    public UserRepository getUserRepository() throws ClassNotFoundException {
-        return new FileUserRepositoryImpl(repositoryRootPath);
+    public static FileRepositoryFactory getFactory() throws ClassNotFoundException {
+        if (fileRepositoryFactory == null) {
+            fileRepositoryFactory = new FileRepositoryFactory();
+        }
+        return fileRepositoryFactory;
     }
 
     @Override
-    public PostRepository getPostRepository() {
-        return new FilePostRepositoryImpl(repositoryRootPath);
+    public UserRepository getUserRepository() throws ClassNotFoundException {
+        if (this.fileUserRepository == null) {
+            this.fileUserRepository = new FileUserRepositoryImpl(repositoryRootPath);
+        }
+        return this.fileUserRepository;
+    }
+
+    @Override
+    public UserRepository getUserRepository(PostRepository postRepository) throws ClassNotFoundException {
+        if (this.fileUserRepository == null) {
+            this.fileUserRepository = new FileUserRepositoryImpl(repositoryRootPath,postRepository);
+        }
+        return this.fileUserRepository;
+    }
+
+    @Override
+    public PostRepository getPostRepository() throws ClassNotFoundException {
+        if (this.filePostRepository == null) {
+            this.filePostRepository = new FilePostRepositoryImpl(repositoryRootPath);
+        }
+        return this.filePostRepository;
+    }
+
+    @Override
+    public PostRepository getPostRepository(UserRepository userRepository) throws ClassNotFoundException {
+        if (this.filePostRepository == null) {
+            this.filePostRepository = new FilePostRepositoryImpl(repositoryRootPath,userRepository);
+        }
+        return this.filePostRepository;
     }
 
     @Override
     public RegionRepository getRegionRepository() {
-        return new FileRegionRepositoryImpl(repositoryRootPath);
+        if (this.fileRegionRepository == null) {
+            this.fileRegionRepository = new FileRegionRepositoryImpl(repositoryRootPath);
+        }
+        return this.fileRegionRepository;
     }
 
     private void getFilesRepositoryPath() {

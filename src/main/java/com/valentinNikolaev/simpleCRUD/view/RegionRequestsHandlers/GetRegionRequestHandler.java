@@ -119,7 +119,7 @@ public class GetRegionRequestHandler extends RegionRequestHandler {
                         " [id number] - return the region with " + "requested id\n" + "\t2: " +
                         GET + " " + NAME +
                         " [id number] - return the region with requested name\n" + "\t3: " + GET +
-                        " " + ALL + " - return list of all users in repository\n";
+                        " " + ALL + " - return list of all regions in repository\n";
 
         System.out.println(helpInfo);
     }

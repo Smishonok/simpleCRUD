@@ -39,8 +39,15 @@ public class FileUserRepositoryImpl implements UserRepository {
     public FileUserRepositoryImpl(Path repositoryRootPath) throws ClassNotFoundException {
         this.usersRepositoryPath = repositoryRootPath.resolve("userRepository.txt");
         createUserRepository();
-        postRepository   = RepositoryManager.getRepositoryFactory().getPostRepository();
-        regionRepository = RepositoryManager.getRepositoryFactory().getRegionRepository();
+        this.postRepository   = RepositoryManager.getRepositoryFactory().getPostRepository(this);
+        this.regionRepository = RepositoryManager.getRepositoryFactory().getRegionRepository();
+    }
+
+    public FileUserRepositoryImpl(Path repositoryRootPath, PostRepository postRepository) throws ClassNotFoundException {
+        this.usersRepositoryPath = repositoryRootPath.resolve("userRepository.txt");
+        createUserRepository();
+        this.postRepository   = postRepository;
+        this.regionRepository = RepositoryManager.getRepositoryFactory().getRegionRepository();
     }
 
     private void createUserRepository() {

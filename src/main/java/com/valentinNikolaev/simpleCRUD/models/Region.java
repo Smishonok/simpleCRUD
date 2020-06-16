@@ -80,6 +80,6 @@ public class Region {
 
     @Override
     public String toString() {
-        return "Region id: "+this.id+" Region name: "+this.name;
+        return "Region{" + "id=" + id + ", name='" + name + '\'' + '}';
     }
 }

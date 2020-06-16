@@ -32,47 +32,68 @@ public class AddPostRequestHandler extends PostRequestHandler {
     }
 
     private void processRequest(List<String> options) {
-        if (options.size() == 0) {
-            this.getErrorMessage();
-            return;
+        String requestType = "";
+        if (options.size() != 0) {
+            requestType = options.get(0);
         }
 
-        if (options.size() == 1) {
-            getHelpForAddingPostRequest(options);
-        } else {
-            addPost(options);
+        List<String> requestOptions = getOptionsWithOutFirst(options);
+
+        switch (requestType) {
+            case HELP:
+                getHelpForAddingPostRequest();
+                break;
+            case USER_ID:
+                addPost(requestOptions);
+                break;
+            default:
+                System.out.println("Invalid request type. Please, check request type and try " +
+                                           "again, or take help information using \"" + ADD + " " +
+                                           HELP + "\".\n");
+                break;
         }
     }
 
-    private void addPost(List<String> options) {
-        Optional<User> user = this.userController.getUserById(options.get(0));
+    private void addPost(List<String> requestOptions) {
+        if (checkRequestOptions(requestOptions)) {
+            String userIdValue = requestOptions.get(0);
+            String content = requestOptions.get(1);
+            this.postController.addPost(userIdValue,content);
+        }
+    }
 
-        if (user.isPresent()) {
-            StringBuilder post = new StringBuilder();
-            for (int i = 1; i < options.size(); i++) {
-                post.append(" ").append(options.get(i));
-            }
-            this.postController.addPost(options.get(0), post.toString());
-        } else {
+    private boolean checkRequestOptions(List<String> requestOptions) {
+        boolean isOptionsCorrect = true;
+        if (requestOptions.size() != 2) {
             System.out.println(
-                    "User with id: " + options.get(0) + " is not exists in repository. " +
-                            "Check user id and try again.");
+                    "Invalid request format. Please, check request format and try again, " +
+                            "or get help information.");
+            isOptionsCorrect = false;
         }
+
+        String userIdValue = requestOptions.get(0);
+        if (! isLong(userIdValue)) {
+            System.out.println("The user`s id should consist only of numbers. Please, check the " +
+                                       "user`s id and try again.");
+            isOptionsCorrect = false;
+        }
+
+        if (! isUserExists(userIdValue)) {
+            System.out.println("User with id: "+userIdValue+" is not exists. Please, check the " +
+                                       "user`s id number and try again.\n");
+            isOptionsCorrect = false;
+        }
+        return isOptionsCorrect;
     }
 
-    private void getHelpForAddingPostRequest(List<String> options) {
-        if (options.get(0).equals(HELP)) {
-            String helpInfo = "For adding post into the repository it can be used next formats of" +
-                    "request:\n" + "\t1: " + ADD + "[user id]  [post content]";
-            System.out.println(helpInfo);
-        } else {
-            getErrorMessage();
-        }
+    private boolean isUserExists(String userId) {
+        Optional<User> user = this.userController.getUserById(userId);
+        return user.isPresent();
     }
 
-    private void getErrorMessage() {
-        System.out.println(
-                "Invalid request format. Please, check request format and try again, or get " +
-                        "help information.");
+    private void getHelpForAddingPostRequest() {
+        String helpInfo = "For adding posts into the repository it can be used next formats of" +
+                "request:\n" + "\t" + ADD + " " + USER_ID + "[user id]" + " [content]";
+        System.out.println(helpInfo);
     }
 }

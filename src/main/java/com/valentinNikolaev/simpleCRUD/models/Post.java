@@ -1,7 +1,6 @@
 package com.valentinNikolaev.simpleCRUD.models;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 public class Post implements Comparable<Post> {
     private long          id;
@@ -38,11 +37,11 @@ public class Post implements Comparable<Post> {
         return content;
     }
 
-    public LocalDateTime getCreatingDateAndTime() {
+    public LocalDateTime getDateOfCreation() {
         return created;
     }
 
-    public LocalDateTime getUpdatingDateAndTime() {
+    public LocalDateTime getDateOfLastUpdate() {
         return updated;
     }
 
@@ -74,8 +73,8 @@ public class Post implements Comparable<Post> {
         Post comparingObj = (Post) obj;
         return this.content.equals(comparingObj.content) &&
                 this.user.equals(comparingObj) && this.created.equals(
-                comparingObj.getCreatingDateAndTime()) && this.updated.equals(
-                comparingObj.getUpdatingDateAndTime());
+                comparingObj.getDateOfCreation()) && this.updated.equals(
+                comparingObj.getDateOfLastUpdate());
     }
 
     public boolean equalsContent(Post post) {
@@ -84,7 +83,7 @@ public class Post implements Comparable<Post> {
 
     @Override
     public int compareTo(Post post) {
-        return this.created.compareTo(post.getCreatingDateAndTime());
+        return this.created.compareTo(post.getDateOfCreation());
     }
 
     @Override
