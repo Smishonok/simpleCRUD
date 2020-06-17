@@ -1,6 +1,6 @@
 package com.valentinNikolaev.simpleCRUD.view;
 
-import com.valentinNikolaev.simpleCRUD.view.PostsRequestsHandlers.*;
+import com.valentinNikolaev.simpleCRUD.view.postsRequestsHandlers.*;
 
 import java.util.List;
 

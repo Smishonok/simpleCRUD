@@ -1,4 +1,4 @@
-package com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers;
+package com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers;
 
 import com.valentinNikolaev.simpleCRUD.controller.RegionController;
 import com.valentinNikolaev.simpleCRUD.models.Role;

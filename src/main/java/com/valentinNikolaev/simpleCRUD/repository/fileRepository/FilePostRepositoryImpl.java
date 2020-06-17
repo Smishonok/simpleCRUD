@@ -1,9 +1,8 @@
-package com.valentinNikolaev.simpleCRUD.repository.FileRepository;
+package com.valentinNikolaev.simpleCRUD.repository.fileRepository;
 
 import com.valentinNikolaev.simpleCRUD.models.Post;
 import com.valentinNikolaev.simpleCRUD.models.User;
 import com.valentinNikolaev.simpleCRUD.repository.PostRepository;
-import com.valentinNikolaev.simpleCRUD.repository.RepositoryFactory;
 import com.valentinNikolaev.simpleCRUD.repository.RepositoryManager;
 import com.valentinNikolaev.simpleCRUD.repository.UserRepository;
 import org.apache.log4j.Logger;
@@ -263,7 +262,7 @@ public class FilePostRepositoryImpl implements PostRepository {
 
     private String createStringWithPostData(Post post) {
         long   postId  = post.getId();
-        User   user    = post.getUser();
+        long   userId    = post.getUserId();
         String content = post.getContent();
 
         long creationTimeInEpochSeconds = post.getDateOfCreation().toEpochSecond(
@@ -272,7 +271,7 @@ public class FilePostRepositoryImpl implements PostRepository {
                 ZoneOffset.UTC);
 
 
-        return POST_ID + postId + ";" + USER_ID + user.getId() + ";" + CREATION_DATE +
+        return POST_ID + postId + ";" + USER_ID + userId + ";" + CREATION_DATE +
                 creationTimeInEpochSeconds + ";" + UPDATING_DATE + updatingTimeInEpochSeconds +
                 ";" + POST_CONTENT + content + ";\n";
     }
@@ -334,11 +333,11 @@ public class FilePostRepositoryImpl implements PostRepository {
         }
 
         long          postId       = parsePostId(postData);
-        User          user         = this.userRepository.get(parseUserId(postData));
+        long          userId         = parseUserId(postData);
         LocalDateTime creationDate = parseDateTime(CREATION_DATE, postData);
         LocalDateTime updatingDate = parseDateTime(UPDATING_DATE, postData);
         String        content      = parseContent(postData);
 
-        return new Post(postId, user, content, creationDate, updatingDate);
+        return new Post(postId, userId, content, creationDate, updatingDate);
     }
 }

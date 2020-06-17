@@ -19,10 +19,7 @@ public class RegionController {
     }
 
     public Region addRegion(String name) {
-        log.debug("The operation of adding a new region with name: "+name+" is started.");
         Region region = regionRepository.add(new Region(getLastRegionId() + 1, name));
-        log.debug("The operation was ended, region with id: "+region.getId()+" was added " +
-                          "into repository.");
         return region;
     }
 
@@ -66,21 +63,17 @@ public class RegionController {
     }
 
     public boolean removeAllRegions() {
-        log.debug("Removing all regions from repository.");
         boolean isAllRegionsRemoved = regionRepository.removeAll();
         return isAllRegionsRemoved;
     }
 
     public List<Region> getAllRegions() {
-        log.debug("Getting list of all regions from repository.");
         List<Region> regionList = regionRepository.getAll();
         return regionList;
     }
 
     private void initRegionRepository() throws ClassNotFoundException {
-        log.debug("Starting initialisation of Region repository");
         regionRepository = RepositoryManager.getRepositoryFactory().getRegionRepository();
-        log.debug("Region repository implementation is: " + regionRepository.getClass().getName());
     }
 
     private long getLastRegionId() {

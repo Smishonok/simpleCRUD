@@ -1,4 +1,4 @@
-package com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers;
+package com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers;
 
 import com.valentinNikolaev.simpleCRUD.controller.UserController;
 import com.valentinNikolaev.simpleCRUD.view.RequestHandler;
@@ -41,7 +41,7 @@ public class RemoveUserRequestsHandler extends UserRequestHandler {
                 }
                 break;
             case ALL:
-
+                removeAllUsers();
                 break;
             default:
                 System.out.println(

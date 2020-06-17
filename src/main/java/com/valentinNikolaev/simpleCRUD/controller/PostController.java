@@ -4,15 +4,12 @@ import com.valentinNikolaev.simpleCRUD.models.Post;
 import com.valentinNikolaev.simpleCRUD.models.User;
 import com.valentinNikolaev.simpleCRUD.repository.PostRepository;
 import com.valentinNikolaev.simpleCRUD.repository.RepositoryManager;
-import org.apache.log4j.Logger;
 
 import java.util.List;
 import java.util.Optional;
 
 
 public class PostController {
-
-    static Logger log = Logger.getLogger(PostController.class);
 
     private PostRepository postRepository;
     private UserController userController;
@@ -23,19 +20,15 @@ public class PostController {
     }
 
     private void initPostRepository() throws ClassNotFoundException {
-        log.debug("Starting initialisation of posts repository");
         postRepository = RepositoryManager.getRepositoryFactory().getPostRepository();
-        log.debug("Posts repository implementation is: " + postRepository.getClass().getName());
     }
 
     public Post addPost(String userId, String content) {
-        log.debug("Start creating and adding new post into repository.");
         Optional<User> user = this.userController.getUserById(userId);
         if (user.isPresent()) {
             long postId    = this.getLastPostId() + 1;
             Post addedPost = this.postRepository.add(
-                    new Post(postId, user.get(), content));
-            log.debug("New post with id: "+addedPost.getId()+" created and added into repository.");
+                    new Post(postId, user.get().getId(), content));
             return addedPost;
         } else {
             throw new IllegalArgumentException("The user with id: " + userId + " is not exists.");

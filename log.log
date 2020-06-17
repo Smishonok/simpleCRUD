@@ -7,10 +7,10 @@
 2020-06-17 12:09:38,558 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:09:38,560 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:09:38,565 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:09:38,572 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 12:09:38,572 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 12:09:38,574 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 12:09:38,577 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 12:09:38,578 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 12:09:38,578 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 12:09:38,578 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 12:09:38,578 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
 2020-06-17 12:09:38,578 [DEBUG5] RepositoryManager.java:37 - Choosing the repository factory, which will used.
@@ -20,7 +20,7 @@
 2020-06-17 12:09:38,581 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:09:38,582 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:09:38,582 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:09:38,582 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 12:09:38,582 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 12:09:38,584 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 12:09:38,585 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 12:09:38,585 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
@@ -31,7 +31,7 @@
 2020-06-17 12:09:38,586 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:09:38,587 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:09:38,587 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:09:38,587 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 12:09:38,587 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 12:09:38,589 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 12:09:38,590 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 12:09:38,590 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
@@ -42,13 +42,13 @@
 2020-06-17 12:09:38,591 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:09:38,591 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:09:38,592 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:09:38,592 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 12:09:38,593 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 12:09:38,592 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 12:09:38,593 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 12:09:38,623 [ERROR5] Main.java:18 - Region with id 1' does not contain in database.
-2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:83)
-2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:22)
-2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
-2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
+2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:83)
+2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:22)
+2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
+2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
 2020-06-17 12:09:38,624 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
 2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
 2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
@@ -56,18 +56,18 @@
 2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
 2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
+2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
 2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.controller.UserController.getAllUsersList(UserController.java:57)
-2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
-2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
-2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
-2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
+2020-06-17 12:09:38,625 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
+2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
+2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
 2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
 2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
 2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
 2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
 2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
 2020-06-17 12:09:38,626 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
@@ -81,10 +81,10 @@
 2020-06-17 12:11:49,564 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:11:49,566 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:11:49,569 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:11:49,577 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 12:11:49,577 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 12:11:49,579 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 12:11:49,580 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 12:11:49,581 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 12:11:49,581 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 12:11:49,582 [DEBUG5] RegionController.java:75 - Getting list of all regions from repository.
 2020-06-17 12:12:00,786 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 12:12:00,787 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
@@ -95,8 +95,8 @@
 2020-06-17 12:12:00,791 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:12:00,792 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:12:00,792 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:12:00,793 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 12:12:00,793 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 12:12:00,793 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 12:12:00,793 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 12:12:00,794 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 12:12:00,794 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
 2020-06-17 12:12:00,794 [DEBUG5] RepositoryManager.java:37 - Choosing the repository factory, which will used.
@@ -106,7 +106,7 @@
 2020-06-17 12:12:00,795 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:12:00,796 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:12:00,796 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:12:00,796 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 12:12:00,796 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 12:12:00,799 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 12:12:00,800 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 12:12:00,800 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
@@ -117,7 +117,7 @@
 2020-06-17 12:12:00,801 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:12:00,802 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:12:00,803 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:12:00,803 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 12:12:00,803 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 12:12:00,805 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 12:12:00,806 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 12:12:00,806 [DEBUG5] RepositoryManager.java:18 - Start to choose the repository factory.
@@ -128,13 +128,13 @@
 2020-06-17 12:12:00,809 [DEBUG5] RepositoryManager.java:63 - Start loading of property`s file
 2020-06-17 12:12:00,810 [DEBUG5] RepositoryManager.java:66 - Properties file loaded successfully. Config file size: 1
 2020-06-17 12:12:00,810 [DEBUG5] RepositoryManager.java:48 - Chosen repository factory`s name is: FileRepository
-2020-06-17 12:12:00,810 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 12:12:00,811 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 12:12:00,810 [DEBUG5] RepositoryManager.java:32 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 12:12:00,811 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 12:12:00,828 [ERROR5] Main.java:18 - Region with id 1' does not contain in database.
-2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:83)
-2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:22)
-2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
-2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
+2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:83)
+2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:22)
+2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
+2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
 2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
 2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
 2020-06-17 12:12:00,830 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
@@ -142,18 +142,18 @@
 2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
 2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
+2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
 2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.controller.UserController.getAllUsersList(UserController.java:57)
-2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
-2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
-2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
-2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
+2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
+2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
+2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
 2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 12:12:00,831 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
 2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
 2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
 2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
 2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
 2020-06-17 12:12:00,832 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
@@ -167,27 +167,27 @@
 2020-06-17 17:08:51,820 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:08:51,823 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:08:51,827 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:08:51,836 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:08:51,836 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:08:51,838 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:08:51,843 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:08:51,844 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:08:51,844 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:08:51,844 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:08:51,845 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:08:51,845 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:08:51,845 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:08:51,848 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:08:51,849 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:08:51,849 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:08:51,850 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:08:51,850 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:08:51,852 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:08:51,853 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:08:51,853 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:08:51,853 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:08:51,854 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:08:51,853 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:08:51,854 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:08:51,875 [ERROR5] Main.java:18 - Region with id 1' does not contain in database.
-2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:83)
-2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:22)
-2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
-2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
+2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:83)
+2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:22)
+2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
+2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
 2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
 2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
 2020-06-17 17:08:51,877 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
@@ -195,18 +195,18 @@
 2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
 2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
 2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
-2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
+2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
 2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.controller.UserController.getAllUsersList(UserController.java:57)
-2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
-2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
-2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
-2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 17:08:51,878 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
+2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
+2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
+2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
 2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
 2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 17:08:51,879 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
 2020-06-17 17:08:51,880 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:08:51,880 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 17:08:51,880 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
 2020-06-17 17:08:51,880 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
 2020-06-17 17:08:51,880 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
 2020-06-17 17:08:51,880 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
@@ -220,70 +220,70 @@
 2020-06-17 17:10:34,924 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:10:34,927 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:10:34,932 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:10:34,940 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:10:34,940 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:10:34,941 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:10:34,942 [DEBUG5] FileRegionRepositoryImpl.java:40 - Region repository does not exist, started the creation of a repository file.
 2020-06-17 17:10:34,946 [DEBUG5] FileRegionRepositoryImpl.java:47 - The repository file with regions data created successfully
-2020-06-17 17:10:34,946 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:10:34,946 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:10:34,947 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:10:34,947 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:10:34,949 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:10:34,949 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:10:34,951 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:10:34,952 [DEBUG5] FileUserRepositoryImpl.java:56 - Users repository does not exist, started the creation of a repository file.
 2020-06-17 17:10:34,953 [DEBUG5] FileUserRepositoryImpl.java:63 - The repository file with users data created successfully
 2020-06-17 17:10:34,953 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:10:34,953 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:10:34,953 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:10:34,955 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:10:34,955 [DEBUG5] FilePostRepositoryImpl.java:56 - Posts repository does not exist, started the creation of a repository file.
 2020-06-17 17:10:34,956 [DEBUG5] FilePostRepositoryImpl.java:63 - The repository file with posts data created successfully
 2020-06-17 17:10:34,956 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:10:34,956 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:10:34,957 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:10:34,956 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:10:34,957 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:11:00,657 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:11:00,657 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:11:00,658 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:11:00,658 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:11:00,658 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:11:00,658 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:11:00,666 [DEBUG5] RegionController.java:22 - The operation of adding a new region with name: Moscow is started.
 2020-06-17 17:11:00,703 [DEBUG5] RegionController.java:24 - The operation was ended, region with id: 1 was added into repository.
 2020-06-17 17:11:05,033 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:11:05,034 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:11:05,034 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:11:05,034 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:11:05,034 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:11:05,034 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:11:05,035 [DEBUG5] RegionController.java:75 - Getting list of all regions from repository.
 2020-06-17 17:11:25,592 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:11:25,592 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:11:25,593 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:11:25,593 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:11:25,593 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:11:25,593 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:11:25,597 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:11:25,597 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:11:25,597 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:11:25,597 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:11:25,597 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:11:25,597 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:11:25,598 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:11:25,598 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:11:25,598 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:11:25,598 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:11:25,598 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:11:25,598 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:11:25,635 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:11:25,639 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:12:16,436 [DEBUG5] PostController.java:26 - Starting initialisation of posts repository
 2020-06-17 17:12:16,437 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:12:16,437 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:12:16,438 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FilePostRepositoryImpl
+2020-06-17 17:12:16,437 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:12:16,438 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FilePostRepositoryImpl
 2020-06-17 17:12:16,438 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:12:16,438 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:12:16,438 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:12:16,439 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:12:16,438 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:12:16,439 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:12:16,439 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:12:16,439 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:12:16,439 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:12:16,439 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:12:16,439 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:12:16,439 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:12:16,440 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:12:16,440 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:12:16,440 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:12:16,440 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:12:16,440 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:12:16,440 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:12:16,440 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:12:16,440 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:12:16,441 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:12:16,441 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:12:16,441 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:12:16,441 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:12:16,448 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:12:16,449 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:12:16,450 [DEBUG5] PostController.java:32 - Start creating and adding new post into repository.
@@ -661,87 +661,87 @@
 2020-06-17 17:19:57,906 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:19:57,908 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:19:57,913 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:19:57,925 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:19:57,925 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:19:57,926 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:19:57,927 [DEBUG5] FileRegionRepositoryImpl.java:40 - Region repository does not exist, started the creation of a repository file.
 2020-06-17 17:19:57,930 [DEBUG5] FileRegionRepositoryImpl.java:47 - The repository file with regions data created successfully
-2020-06-17 17:19:57,931 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:19:57,931 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:19:57,931 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:19:57,931 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:19:57,934 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:19:57,934 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:19:57,936 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:19:57,936 [DEBUG5] FileUserRepositoryImpl.java:56 - Users repository does not exist, started the creation of a repository file.
 2020-06-17 17:19:57,937 [DEBUG5] FileUserRepositoryImpl.java:63 - The repository file with users data created successfully
 2020-06-17 17:19:57,937 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:19:57,938 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:19:57,938 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:19:57,939 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:19:57,940 [DEBUG5] FilePostRepositoryImpl.java:56 - Posts repository does not exist, started the creation of a repository file.
 2020-06-17 17:19:57,941 [DEBUG5] FilePostRepositoryImpl.java:63 - The repository file with posts data created successfully
 2020-06-17 17:19:57,941 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:19:57,941 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:19:57,942 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:19:57,941 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:19:57,942 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:20:24,145 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:20:24,146 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:20:24,146 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:20:24,146 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:20:24,146 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:20:24,146 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:20:38,080 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:20:38,080 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:20:38,080 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:20:38,081 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:20:38,080 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:20:38,081 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:20:38,081 [DEBUG5] RegionController.java:22 - The operation of adding a new region with name: Moscow is started.
 2020-06-17 17:20:38,111 [DEBUG5] RegionController.java:24 - The operation was ended, region with id: 1 was added into repository.
 2020-06-17 17:20:52,400 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:20:52,401 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:20:52,401 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:20:52,401 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:20:52,401 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:20:52,401 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:20:52,406 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:20:52,406 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:20:52,406 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:20:52,406 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:20:52,406 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:20:52,406 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:20:52,407 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:20:52,407 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:20:52,407 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:20:52,407 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:20:52,407 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:20:52,407 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:20:52,439 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:20:52,444 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:21:04,088 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:21:04,089 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:21:04,089 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:21:04,089 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:21:04,089 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:21:04,089 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:21:04,090 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:21:04,090 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:21:04,090 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:21:04,090 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:21:04,090 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:21:04,090 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:21:12,433 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:21:12,434 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:21:12,434 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:21:12,434 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:21:12,434 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:21:12,434 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:21:12,434 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:21:12,434 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:21:12,435 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:21:12,435 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:21:12,435 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:21:12,435 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:21:23,848 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:21:23,849 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:21:23,849 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:21:23,849 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:21:23,849 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:21:23,849 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:21:23,849 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:21:23,850 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:21:23,850 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:21:23,850 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:21:23,850 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:21:23,850 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:21:23,853 [ERROR5] Main.java:18 - Index 0 out of bounds for length 0
 2020-06-17 17:21:23,854 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 2020-06-17 17:21:23,854 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 2020-06-17 17:21:23,854 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
 2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - java.base/java.util.Objects.checkIndex(Objects.java:372)
 2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList.get(ArrayList.java:458)
-2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:44)
-2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:44)
+2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
 2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
 2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
 2020-06-17 17:21:23,855 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:21:23,856 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 17:21:23,856 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
 2020-06-17 17:21:23,856 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
 2020-06-17 17:21:23,856 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
 2020-06-17 17:21:23,856 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
@@ -755,36 +755,36 @@
 2020-06-17 17:23:20,024 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:23:20,027 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:23:20,033 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:23:20,041 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:23:20,041 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:23:20,043 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:23:20,046 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:23:20,047 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:23:20,047 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:23:20,047 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:23:20,047 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:23:20,048 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:23:20,048 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:23:20,052 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:23:20,054 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:23:20,054 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:23:20,054 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:23:20,054 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:23:20,056 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:23:20,056 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:23:20,056 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:23:20,056 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:23:20,057 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:23:20,056 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:23:20,057 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:23:20,059 [ERROR5] Main.java:18 - Index 0 out of bounds for length 0
 2020-06-17 17:23:20,061 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 2020-06-17 17:23:20,061 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 2020-06-17 17:23:20,061 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
 2020-06-17 17:23:20,061 [ERROR5] Spliterators.java:948 - java.base/java.util.Objects.checkIndex(Objects.java:372)
 2020-06-17 17:23:20,061 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList.get(ArrayList.java:458)
-2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:44)
-2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:44)
+2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
 2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
 2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 17:23:20,062 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
 2020-06-17 17:23:20,063 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:23:20,063 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 17:23:20,063 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
 2020-06-17 17:23:20,063 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
 2020-06-17 17:23:20,063 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
 2020-06-17 17:23:20,063 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
@@ -798,36 +798,36 @@
 2020-06-17 17:25:05,669 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:25:05,671 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:25:05,675 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:25:05,680 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:25:05,680 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:25:05,682 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:25:05,685 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:25:05,686 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:25:05,686 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:25:05,686 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:25:05,686 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:25:05,686 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:25:05,686 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:25:05,690 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:25:05,691 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:25:05,691 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:25:05,691 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:25:05,691 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:25:05,693 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:25:05,694 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:25:05,694 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:25:05,694 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:25:05,695 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:25:05,694 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:25:05,695 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:25:05,698 [ERROR5] Main.java:18 - Index 0 out of bounds for length 0
 2020-06-17 17:25:05,699 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
 2020-06-17 17:25:05,699 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
 2020-06-17 17:25:05,699 [ERROR5] Spliterators.java:948 - java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:248)
 2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - java.base/java.util.Objects.checkIndex(Objects.java:372)
 2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList.get(ArrayList.java:458)
-2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:44)
-2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:44)
+2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
 2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
 2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
 2020-06-17 17:25:05,700 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
-2020-06-17 17:25:05,701 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 17:25:05,701 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
 2020-06-17 17:25:05,701 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
 2020-06-17 17:25:05,701 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
 2020-06-17 17:25:05,701 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
@@ -841,22 +841,22 @@
 2020-06-17 17:25:38,509 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:25:38,512 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:25:38,516 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:25:38,523 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:25:38,523 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:25:38,526 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:25:38,529 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:25:38,529 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:25:38,529 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:25:38,529 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:25:38,530 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:25:38,530 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:25:38,530 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:25:38,533 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:25:38,533 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:25:38,533 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:25:38,534 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:25:38,534 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:25:38,535 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:25:38,535 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:25:38,535 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:25:38,535 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:25:38,536 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:25:38,535 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:25:38,536 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:26:48,301 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:26:48,305 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:26:48,308 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -866,22 +866,22 @@
 2020-06-17 17:26:48,315 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:26:48,317 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:26:48,321 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:26:48,327 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:26:48,327 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:26:48,329 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:26:48,331 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:26:48,332 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:26:48,332 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:26:48,333 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:26:48,333 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:26:48,333 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:26:48,333 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:26:48,337 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:26:48,337 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:26:48,337 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:26:48,338 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:26:48,338 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:26:48,339 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:26:48,339 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:26:48,339 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:26:48,339 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:26:48,340 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:26:48,339 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:26:48,340 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:28:32,542 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:28:32,545 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:28:32,548 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -891,22 +891,22 @@
 2020-06-17 17:28:32,555 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:28:32,557 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:28:32,563 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:28:32,570 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:28:32,570 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:28:32,572 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:28:32,575 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:28:32,576 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:28:32,576 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:28:32,576 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:28:32,576 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:28:32,577 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:28:32,577 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:28:32,580 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:28:32,581 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:28:32,581 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:28:32,582 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:28:32,582 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:28:32,583 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:28:32,584 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:28:32,584 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:28:32,584 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:28:32,584 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:28:32,584 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:28:32,584 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:29:53,382 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:29:53,386 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:29:53,389 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -916,22 +916,22 @@
 2020-06-17 17:29:53,396 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:29:53,398 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:29:53,401 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:29:53,406 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:29:53,406 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:29:53,408 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:29:53,411 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:29:53,412 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:29:53,412 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:29:53,412 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:29:53,412 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:29:53,412 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:29:53,412 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:29:53,416 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:29:53,417 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:29:53,417 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:29:53,417 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:29:53,417 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:29:53,419 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:29:53,420 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:29:53,420 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:29:53,420 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:29:53,421 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:29:53,420 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:29:53,421 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:31:33,424 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:31:33,429 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:31:33,431 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -941,22 +941,22 @@
 2020-06-17 17:31:33,439 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:31:33,441 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:31:33,445 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:31:33,452 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:31:33,452 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:31:33,454 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:31:33,457 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:31:33,458 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:31:33,458 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:31:33,458 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:31:33,458 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:31:33,458 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:31:33,458 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:31:33,462 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:31:33,463 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:31:33,463 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:31:33,463 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:31:33,463 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:31:33,465 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:31:33,465 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:31:33,465 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:31:33,465 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:31:33,466 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:31:33,465 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:31:33,466 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:36:58,886 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:36:58,891 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:36:58,894 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -966,22 +966,22 @@
 2020-06-17 17:36:58,901 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:36:58,903 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:36:58,906 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:36:58,912 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:36:58,912 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:36:58,914 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:36:58,917 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:36:58,918 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:36:58,918 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:36:58,918 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:36:58,918 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:36:58,918 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:36:58,918 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:36:58,924 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:36:58,925 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:36:58,925 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:36:58,925 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:36:58,925 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:36:58,927 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:36:58,928 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:36:58,928 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:36:58,928 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:36:58,928 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:36:58,928 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:36:58,928 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:37:55,703 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:37:55,707 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:37:55,710 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -991,30 +991,30 @@
 2020-06-17 17:37:55,718 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:37:55,721 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:37:55,727 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:37:55,735 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:37:55,735 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:37:55,737 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:37:55,740 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:37:55,740 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:37:55,740 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:37:55,741 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:37:55,741 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:37:55,741 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:37:55,741 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:37:55,745 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:37:55,746 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:37:55,746 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:37:55,746 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:37:55,746 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:37:55,748 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:37:55,748 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:37:55,749 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:37:55,749 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:37:55,750 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:37:55,749 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:37:55,750 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:38:08,698 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:38:08,698 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:38:08,698 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:38:08,699 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:38:08,698 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:38:08,699 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:38:08,699 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:38:08,699 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:38:08,699 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:38:08,699 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:38:08,699 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:38:08,699 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:40:04,542 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:40:04,546 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:40:04,548 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -1024,22 +1024,22 @@
 2020-06-17 17:40:04,555 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:40:04,557 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:40:04,560 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:40:04,566 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:40:04,566 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:40:04,568 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:40:04,571 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:40:04,571 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:40:04,571 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:40:04,572 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:40:04,572 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:40:04,572 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:40:04,572 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:40:04,576 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:40:04,577 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:40:04,577 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:40:04,577 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:40:04,577 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:40:04,579 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:40:04,579 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:40:04,579 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:40:04,579 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:40:04,580 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:40:04,579 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:40:04,580 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:41:04,336 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:41:04,341 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:41:04,344 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -1049,22 +1049,22 @@
 2020-06-17 17:41:04,351 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:41:04,353 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:41:04,358 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:41:04,365 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:41:04,365 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:41:04,366 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:41:04,369 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:41:04,370 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:41:04,370 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:41:04,370 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:41:04,370 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:41:04,370 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:41:04,370 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:41:04,374 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:41:04,375 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:41:04,375 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:41:04,375 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:41:04,375 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:41:04,377 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:41:04,377 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:41:04,377 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:41:04,377 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:41:04,377 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:41:04,377 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:41:04,377 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:42:32,349 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:42:32,353 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
 2020-06-17 17:42:32,356 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
@@ -1074,22 +1074,22 @@
 2020-06-17 17:42:32,363 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:42:32,365 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:42:32,370 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:42:32,376 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:42:32,376 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:42:32,378 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:42:32,381 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:42:32,382 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:42:32,382 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:42:32,382 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:42:32,383 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:42:32,383 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:42:32,383 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:42:32,387 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:42:32,387 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:42:32,387 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:42:32,387 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:42:32,387 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:42:32,389 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:42:32,390 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:42:32,390 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:42:32,390 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:42:32,390 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:42:32,390 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:42:32,390 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:42:32,415 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:42:32,421 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:44:08,077 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
@@ -1101,230 +1101,230 @@
 2020-06-17 17:44:08,091 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
 2020-06-17 17:44:08,094 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
 2020-06-17 17:44:08,098 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
-2020-06-17 17:44:08,104 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:44:08,104 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:44:08,105 [DEBUG5] FileRegionRepositoryImpl.java:38 - Checking is repository file with region data exists.
 2020-06-17 17:44:08,108 [DEBUG5] FileRegionRepositoryImpl.java:49 - The repository file with regions data exists.
-2020-06-17 17:44:08,109 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:44:08,109 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:44:08,109 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:44:08,109 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:08,109 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:44:08,109 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:44:08,114 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
 2020-06-17 17:44:08,114 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
 2020-06-17 17:44:08,114 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:08,115 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
+2020-06-17 17:44:08,115 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
 2020-06-17 17:44:08,116 [DEBUG5] FilePostRepositoryImpl.java:54 - The operation of checking existence of repository file is started.
 2020-06-17 17:44:08,117 [DEBUG5] FilePostRepositoryImpl.java:65 - The repository file with posts data exists.
 2020-06-17 17:44:08,117 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:08,117 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:08,117 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:44:08,117 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:08,117 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:44:08,142 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:44:08,146 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:44:26,794 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:44:26,795 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:26,795 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:26,796 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:44:26,795 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:26,796 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:44:26,796 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:44:26,796 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:26,796 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:26,797 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:44:26,796 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:26,797 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:44:40,970 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:44:40,971 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:40,971 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:40,971 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:44:40,971 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:40,971 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:44:40,971 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:44:40,971 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:40,971 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:40,972 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:44:40,971 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:40,972 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:44:52,018 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:44:52,018 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:52,018 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:52,018 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:44:52,018 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:52,018 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:44:52,019 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:44:52,019 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:44:52,019 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:44:52,019 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:44:52,019 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:44:52,019 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:46:43,738 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:46:43,738 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:46:43,739 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:46:43,739 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:46:43,739 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:46:43,739 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:46:43,739 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:46:43,740 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:46:43,740 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:46:43,740 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:46:43,740 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:46:43,740 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:46:56,866 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:46:56,866 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:46:56,866 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:46:56,866 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:46:56,866 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:46:56,866 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:46:56,867 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:46:56,867 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:46:56,867 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:46:56,867 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:46:56,867 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:46:56,867 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:48:08,299 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:48:08,300 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:48:08,300 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:48:08,300 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:48:08,300 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:48:08,300 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:48:08,300 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:48:08,300 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:48:08,301 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:48:08,301 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:48:08,301 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:48:08,301 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:48:08,309 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:48:08,309 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:48:20,666 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:48:20,666 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:48:20,666 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:48:20,666 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:48:20,666 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:48:20,666 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:48:20,666 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:48:20,666 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:48:20,668 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:48:20,668 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:48:20,668 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:48:20,668 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:48:20,675 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:48:20,676 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:48:41,826 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:48:41,826 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:48:41,827 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:48:41,827 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:48:41,827 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:48:41,827 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:48:41,827 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:48:41,827 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:48:41,827 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:48:41,827 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:48:41,827 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:48:41,827 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:48:41,834 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:48:41,835 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:49:03,715 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:03,715 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:03,715 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:03,715 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:03,715 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:03,715 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:03,716 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:03,716 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:03,716 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:03,716 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:03,716 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:03,716 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:03,722 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:49:03,723 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:49:14,058 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:14,058 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:14,058 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:14,059 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:14,058 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:14,059 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:14,059 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:14,059 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:14,059 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:14,059 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:14,059 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:14,059 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:14,064 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:49:14,065 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:49:23,482 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:23,483 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:23,483 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:23,483 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:23,483 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:23,483 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:23,483 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:23,484 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:23,484 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:23,484 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:23,484 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:23,484 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:23,488 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:49:23,489 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:49:35,819 [DEBUG5] PostController.java:26 - Starting initialisation of posts repository
 2020-06-17 17:49:35,819 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:35,820 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:35,820 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FilePostRepositoryImpl
+2020-06-17 17:49:35,820 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:35,820 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FilePostRepositoryImpl
 2020-06-17 17:49:35,820 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:35,821 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:35,821 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:35,821 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:35,821 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:35,821 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:35,821 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:35,821 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:35,822 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:35,822 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:35,822 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:35,822 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:35,822 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:35,822 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:35,822 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:35,822 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:35,822 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:35,822 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:47,170 [DEBUG5] PostController.java:26 - Starting initialisation of posts repository
 2020-06-17 17:49:47,170 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:47,171 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:47,171 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FilePostRepositoryImpl
+2020-06-17 17:49:47,171 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:47,171 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FilePostRepositoryImpl
 2020-06-17 17:49:47,171 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:47,171 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:47,172 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:47,172 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:47,172 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:47,172 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:47,172 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:47,172 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:47,172 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:47,173 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:47,172 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:47,173 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:47,173 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:49:47,173 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:47,173 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:47,173 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:49:47,173 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:47,173 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:49:47,173 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:49:47,174 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:49:47,174 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:49:47,174 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:49:47,174 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:49:47,174 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:49:47,182 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:49:47,183 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:49:47,183 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:49:47,184 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:50:02,866 [DEBUG5] PostController.java:26 - Starting initialisation of posts repository
 2020-06-17 17:50:02,867 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:02,867 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:02,867 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FilePostRepositoryImpl
+2020-06-17 17:50:02,867 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:02,867 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FilePostRepositoryImpl
 2020-06-17 17:50:02,868 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:50:02,868 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:02,869 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:02,869 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:50:02,869 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:02,869 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:50:02,869 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:50:02,869 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:02,870 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:02,870 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:50:02,870 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:02,870 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:50:02,870 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:50:02,877 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:02,878 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:02,879 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:50:02,878 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:02,879 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:50:02,879 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:50:02,880 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:02,880 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:02,880 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:50:02,880 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:02,880 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:50:02,880 [DEBUG5] FilePostRepositoryImpl.java:150 - The operation of getting the list with all posts from repository is started.
 2020-06-17 17:50:02,883 [DEBUG5] FilePostRepositoryImpl.java:153 - The operation was ended. The size of returned posts list is: 0
 2020-06-17 17:50:20,369 [DEBUG5] PostController.java:26 - Starting initialisation of posts repository
 2020-06-17 17:50:20,369 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:20,370 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:20,370 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FilePostRepositoryImpl
+2020-06-17 17:50:20,370 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:20,370 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FilePostRepositoryImpl
 2020-06-17 17:50:20,370 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:50:20,370 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:20,370 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:20,371 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:50:20,370 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:20,371 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:50:20,371 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:50:20,371 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:20,371 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:20,371 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:50:20,371 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:20,371 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:50:20,372 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:50:20,373 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:20,373 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:20,373 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:50:20,373 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:20,373 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:50:20,374 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:50:20,374 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:20,374 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:20,374 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:50:20,374 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:20,374 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:50:52,634 [DEBUG5] PostController.java:26 - Starting initialisation of posts repository
 2020-06-17 17:50:52,634 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:52,635 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:52,635 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FilePostRepositoryImpl
+2020-06-17 17:50:52,635 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:52,635 [DEBUG5] PostController.java:28 - Posts repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FilePostRepositoryImpl
 2020-06-17 17:50:52,635 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:50:52,635 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:52,635 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:52,635 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:50:52,635 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:52,635 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:50:52,636 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:50:52,636 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:52,636 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:52,636 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:50:52,636 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:52,636 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:50:52,636 [DEBUG5] RegionController.java:81 - Starting initialisation of Region repository
 2020-06-17 17:50:52,637 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:52,637 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:52,637 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRegionRepositoryImpl
+2020-06-17 17:50:52,637 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:52,637 [DEBUG5] RegionController.java:83 - Region repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl
 2020-06-17 17:50:52,637 [DEBUG5] UserController.java:27 - Starting initialisation of User repository
 2020-06-17 17:50:52,637 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
-2020-06-17 17:50:52,637 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory
-2020-06-17 17:50:52,638 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileUserRepositoryImpl
+2020-06-17 17:50:52,637 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 17:50:52,638 [DEBUG5] UserController.java:29 - User repository implementation is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl
 2020-06-17 17:50:52,643 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:50:52,644 [DEBUG5] FilePostRepositoryImpl.java:197 - The operation was ended. The size of list with users`s posts is: 0
 2020-06-17 17:50:52,644 [DEBUG5] PostController.java:32 - Start creating and adding new post into repository.
@@ -1676,3 +1676,173 @@
 2020-06-17 17:50:54,542 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:50:54,545 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
 2020-06-17 17:50:54,549 [DEBUG5] FilePostRepositoryImpl.java:187 - The operation of getting list of posts mad by the user with id: 1is started.
+2020-06-17 20:00:07,478 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,480 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
+2020-06-17 20:00:07,483 [DEBUG5] RepositoryManager.java:60 - Checking is the properties file exists.
+2020-06-17 20:00:07,489 [DEBUG5] RepositoryManager.java:62 - Checking result is: true
+2020-06-17 20:00:07,489 [DEBUG5] RepositoryManager.java:47 - Getting the repository factory`s name from config file.
+2020-06-17 20:00:07,489 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
+2020-06-17 20:00:07,492 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
+2020-06-17 20:00:07,497 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
+2020-06-17 20:00:07,502 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,504 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,505 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,507 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
+2020-06-17 20:00:07,510 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
+2020-06-17 20:00:07,510 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,510 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,512 [DEBUG5] FileRegionRepositoryImpl.java:37 - Checking is repository file with region data exists.
+2020-06-17 20:00:07,514 [DEBUG5] FileRegionRepositoryImpl.java:48 - The repository file with regions data exists.
+2020-06-17 20:00:07,515 [DEBUG5] FilePostRepositoryImpl.java:53 - The operation of checking existence of repository file is started.
+2020-06-17 20:00:07,515 [DEBUG5] FilePostRepositoryImpl.java:64 - The repository file with posts data exists.
+2020-06-17 20:00:07,517 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,518 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,518 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,518 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,518 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,518 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,518 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:07,519 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:07,519 [DEBUG5] FilePostRepositoryImpl.java:149 - The operation of getting the list with all posts from repository is started.
+2020-06-17 20:00:07,543 [DEBUG5] FilePostRepositoryImpl.java:152 - The operation was ended. The size of returned posts list is: 1
+2020-06-17 20:00:30,793 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:30,793 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:30,793 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:30,794 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:30,794 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:30,794 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:30,794 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:30,794 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:30,794 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:30,795 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:47,757 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:47,758 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:47,758 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:47,758 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:47,758 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:47,759 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:47,759 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:47,759 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:47,759 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:00:47,759 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:00:47,766 [DEBUG5] FilePostRepositoryImpl.java:215 - The operation of checking existence in repository of post with id: 1 is started.
+2020-06-17 20:00:47,771 [DEBUG5] FilePostRepositoryImpl.java:224 - The operation was ended. The result of checking is: true
+2020-06-17 20:00:47,772 [DEBUG5] FilePostRepositoryImpl.java:88 - The operation of getting the post with id: 1 from the repository is started.
+2020-06-17 20:00:47,780 [DEBUG5] FilePostRepositoryImpl.java:99 - The post wih id: 1 was founded in repository and returned by the request.
+2020-06-17 20:01:10,329 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:01:10,329 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:01:10,329 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:01:10,329 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:01:10,330 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:01:10,330 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:01:10,330 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:01:10,330 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:01:10,330 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:01:10,330 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:01:10,345 [DEBUG5] FilePostRepositoryImpl.java:186 - The operation of getting list of posts mad by the user with id: 1is started.
+2020-06-17 20:01:10,352 [DEBUG5] FilePostRepositoryImpl.java:196 - The operation was ended. The size of list with users`s posts is: 1
+2020-06-17 20:01:10,353 [DEBUG5] FilePostRepositoryImpl.java:186 - The operation of getting list of posts mad by the user with id: 1is started.
+2020-06-17 20:01:10,358 [DEBUG5] FilePostRepositoryImpl.java:196 - The operation was ended. The size of list with users`s posts is: 1
+2020-06-17 20:07:05,242 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:05,243 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:05,243 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:05,243 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:05,244 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:05,244 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:05,244 [DEBUG5] FilePostRepositoryImpl.java:159 - The operation of removing all posts from the repository is started.
+2020-06-17 20:07:05,247 [ERROR5] FilePostRepositoryImpl.java:171 - The repository file can`t be created: C:\Users\v.nikolaev.YOGA-FIN-1\Dropbox\Java\Library\simpleCRUD\target\classes\FileRepository\postsRepository.txt
+2020-06-17 20:07:05,248 [ERROR5] FilePostRepositoryImpl.java:178 - Repository file can`t be read: C:\Users\v.nikolaev.YOGA-FIN-1\Dropbox\Java\Library\simpleCRUD\target\classes\FileRepository\postsRepository.txt
+2020-06-17 20:07:05,248 [DEBUG5] FilePostRepositoryImpl.java:180 - The operation was ended with status: false
+2020-06-17 20:07:14,474 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:14,474 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:14,474 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:14,475 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:21,067 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:21,067 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:21,070 [ERROR5] FileRegionRepositoryImpl.java:136 - The repository file can`t be created: C:\Users\v.nikolaev.YOGA-FIN-1\Dropbox\Java\Library\simpleCRUD\target\classes\FileRepository\regionRepository.txt
+2020-06-17 20:07:21,071 [ERROR5] FileRegionRepositoryImpl.java:143 - The repository file can`t be read: C:\Users\v.nikolaev.YOGA-FIN-1\Dropbox\Java\Library\simpleCRUD\target\classes\FileRepository\regionRepository.txt
+2020-06-17 20:07:25,881 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:25,882 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:25,882 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:07:25,882 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:07:25,888 [ERROR5] FileRegionRepositoryImpl.java:76 - Users`s repository file can`t be opened and read: C:\Users\v.nikolaev.YOGA-FIN-1\Dropbox\Java\Library\simpleCRUD\target\classes\FileRepository\regionRepository.txt
+2020-06-17 20:07:25,889 [ERROR5] Main.java:18 - Region with id 1' does not contain in database.
+2020-06-17 20:07:25,890 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:82)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRegionRepositoryImpl.get(FileRegionRepositoryImpl.java:21)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseRegion(FileUserRepositoryImpl.java:235)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.parseUser(FileUserRepositoryImpl.java:264)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1654)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:484)
+2020-06-17 20:07:25,891 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+2020-06-17 20:07:25,892 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:913)
+2020-06-17 20:07:25,892 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+2020-06-17 20:07:25,892 [ERROR5] Spliterators.java:948 - java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:578)
+2020-06-17 20:07:25,892 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileUserRepositoryImpl.getAll(FileUserRepositoryImpl.java:134)
+2020-06-17 20:07:25,893 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.controller.UserController.getAllUsersList(UserController.java:55)
+2020-06-17 20:07:25,893 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllUsersList(GetUserRequestHandler.java:86)
+2020-06-17 20:07:25,893 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getAllRequest(GetUserRequestHandler.java:79)
+2020-06-17 20:07:25,893 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.getUserData(GetUserRequestHandler.java:51)
+2020-06-17 20:07:25,893 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.GetUserRequestHandler.handleRequest(GetUserRequestHandler.java:24)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.ChangeUserRequestHandler.handleRequest(ChangeUserRequestHandler.java:26)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.AddUserRequestHandler.handleRequest(AddUserRequestHandler.java:22)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.RequestHandler.getNextHandler(RequestHandler.java:40)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.usersRequestsHandlers.HelpUserRequestHandler.handleRequest(HelpUserRequestHandler.java:29)
+2020-06-17 20:07:25,894 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.UserView.action(UserView.java:18)
+2020-06-17 20:07:25,895 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.processRequest(MainView.java:65)
+2020-06-17 20:07:25,895 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.view.MainView.initiateMainView(MainView.java:46)
+2020-06-17 20:07:25,895 [ERROR5] Spliterators.java:948 - com.valentinNikolaev.simpleCRUD.Main.main(Main.java:14)
+2020-06-17 20:08:15,790 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:08:15,796 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
+2020-06-17 20:08:15,796 [DEBUG5] RepositoryManager.java:60 - Checking is the properties file exists.
+2020-06-17 20:08:15,802 [DEBUG5] RepositoryManager.java:62 - Checking result is: true
+2020-06-17 20:08:15,802 [DEBUG5] RepositoryManager.java:47 - Getting the repository factory`s name from config file.
+2020-06-17 20:08:15,803 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
+2020-06-17 20:08:15,805 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
+2020-06-17 20:08:15,811 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
+2020-06-17 20:08:15,819 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:08:15,821 [DEBUG5] FileRegionRepositoryImpl.java:37 - Checking is repository file with region data exists.
+2020-06-17 20:08:15,822 [DEBUG5] FileRegionRepositoryImpl.java:39 - Region repository does not exist, started the creation of a repository file.
+2020-06-17 20:08:15,827 [DEBUG5] FileRegionRepositoryImpl.java:46 - The repository file with regions data created successfully
+2020-06-17 20:08:15,828 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:08:15,828 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:08:15,830 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
+2020-06-17 20:08:15,831 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
+2020-06-17 20:08:15,833 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:08:15,833 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:08:15,835 [DEBUG5] FilePostRepositoryImpl.java:53 - The operation of checking existence of repository file is started.
+2020-06-17 20:08:15,836 [DEBUG5] FilePostRepositoryImpl.java:55 - Posts repository does not exist, started the creation of a repository file.
+2020-06-17 20:08:15,836 [DEBUG5] FilePostRepositoryImpl.java:62 - The repository file with posts data created successfully
+2020-06-17 20:08:15,837 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:08:15,837 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:08:23,387 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:08:23,388 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:08:23,388 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:08:23,388 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:09:17,398 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:09:17,403 [DEBUG5] RepositoryManager.java:44 - Choosing the repository factory, which will used.
+2020-06-17 20:09:17,403 [DEBUG5] RepositoryManager.java:60 - Checking is the properties file exists.
+2020-06-17 20:09:17,409 [DEBUG5] RepositoryManager.java:62 - Checking result is: true
+2020-06-17 20:09:17,409 [DEBUG5] RepositoryManager.java:47 - Getting the repository factory`s name from config file.
+2020-06-17 20:09:17,410 [DEBUG5] RepositoryManager.java:70 - Start loading of property`s file
+2020-06-17 20:09:17,412 [DEBUG5] RepositoryManager.java:73 - Properties file loaded successfully. Config file size: 1
+2020-06-17 20:09:17,417 [DEBUG5] RepositoryManager.java:55 - Chosen repository factory`s name is: FileRepository
+2020-06-17 20:09:17,425 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:09:17,427 [DEBUG5] FileRegionRepositoryImpl.java:37 - Checking is repository file with region data exists.
+2020-06-17 20:09:17,429 [DEBUG5] FileRegionRepositoryImpl.java:48 - The repository file with regions data exists.
+2020-06-17 20:09:17,429 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:09:17,430 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:09:17,432 [DEBUG5] FileUserRepositoryImpl.java:54 - Checking is repository file with users data exists.
+2020-06-17 20:09:17,432 [DEBUG5] FileUserRepositoryImpl.java:65 - The repository file with users data exists.
+2020-06-17 20:09:17,433 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:09:17,435 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:09:17,437 [DEBUG5] FilePostRepositoryImpl.java:53 - The operation of checking existence of repository file is started.
+2020-06-17 20:09:17,438 [DEBUG5] FilePostRepositoryImpl.java:64 - The repository file with posts data exists.
+2020-06-17 20:09:17,438 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:09:17,438 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:09:22,802 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:09:22,802 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory
+2020-06-17 20:09:22,802 [DEBUG5] RepositoryManager.java:19 - Start to choose the repository factory.
+2020-06-17 20:09:22,803 [DEBUG5] RepositoryManager.java:25 - Chosen repository factory is: com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory

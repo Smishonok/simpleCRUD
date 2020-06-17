@@ -1,4 +1,4 @@
-package com.valentinNikolaev.simpleCRUD.repository.FileRepository;
+package com.valentinNikolaev.simpleCRUD.repository.fileRepository;
 
 import com.valentinNikolaev.simpleCRUD.models.Post;
 import com.valentinNikolaev.simpleCRUD.models.Region;

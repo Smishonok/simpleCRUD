@@ -24,9 +24,7 @@ public class UserController {
     }
 
     private void initUserRepository() throws ClassNotFoundException {
-        log.debug("Starting initialisation of User repository");
         usersRepository = RepositoryManager.getRepositoryFactory().getUserRepository();
-        log.debug("User repository implementation is: " + usersRepository.getClass().getName());
     }
 
     public User addUser(String firstName, String lastName, String regionName) {

@@ -1,6 +1,6 @@
 package com.valentinNikolaev.simpleCRUD.view;
 
-import com.valentinNikolaev.simpleCRUD.view.RegionRequestsHandlers.*;
+import com.valentinNikolaev.simpleCRUD.view.regionRequestsHandlers.*;
 
 import java.util.List;
 

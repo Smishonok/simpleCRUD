@@ -1,4 +1,4 @@
-package com.valentinNikolaev.simpleCRUD.view.RegionRequestsHandlers;
+package com.valentinNikolaev.simpleCRUD.view.regionRequestsHandlers;
 
 import com.valentinNikolaev.simpleCRUD.controller.RegionController;
 import com.valentinNikolaev.simpleCRUD.view.RequestHandler;

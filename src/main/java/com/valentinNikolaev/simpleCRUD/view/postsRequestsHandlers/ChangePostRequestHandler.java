@@ -1,4 +1,4 @@
-package com.valentinNikolaev.simpleCRUD.view.PostsRequestsHandlers;
+package com.valentinNikolaev.simpleCRUD.view.postsRequestsHandlers;
 
 import com.valentinNikolaev.simpleCRUD.controller.PostController;
 import com.valentinNikolaev.simpleCRUD.models.Post;

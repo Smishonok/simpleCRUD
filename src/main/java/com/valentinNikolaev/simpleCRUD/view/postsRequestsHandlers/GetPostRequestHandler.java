@@ -1,4 +1,4 @@
-package com.valentinNikolaev.simpleCRUD.view.PostsRequestsHandlers;
+package com.valentinNikolaev.simpleCRUD.view.postsRequestsHandlers;
 
 import com.valentinNikolaev.simpleCRUD.controller.PostController;
 import com.valentinNikolaev.simpleCRUD.controller.UserController;
@@ -87,7 +87,7 @@ public class GetPostRequestHandler extends PostRequestHandler {
 
     private void printPost(Post post) {
         String userName =
-                "User name: " + post.getUser().getFirstName() + " " + post.getUser().getFirstName();
+                "User id: " + post.getUserId();
         String            postId    = "Post id: " + post.getId();
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy mm:HH:ss");
         String            postDate  = "Post created: " + post.getDateOfCreation().format(formatter);

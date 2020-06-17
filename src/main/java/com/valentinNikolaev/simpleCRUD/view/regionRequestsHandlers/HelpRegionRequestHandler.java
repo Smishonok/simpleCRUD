@@ -1,14 +1,14 @@
-package com.valentinNikolaev.simpleCRUD.view.UsersRequestsHandlers;
+package com.valentinNikolaev.simpleCRUD.view.regionRequestsHandlers;
 
 import com.valentinNikolaev.simpleCRUD.view.RequestHandler;
 
 import java.util.List;
 
-public class HelpUserRequestHandler extends UserRequestHandler {
+public class HelpRegionRequestHandler extends RegionRequestHandler {
 
-    public HelpUserRequestHandler(){}
+    public HelpRegionRequestHandler(){}
 
-    public HelpUserRequestHandler(RequestHandler nextRequestHandler) {
+    public HelpRegionRequestHandler(RequestHandler nextRequestHandler) {
         super(nextRequestHandler);
     }
 
@@ -17,11 +17,11 @@ public class HelpUserRequestHandler extends UserRequestHandler {
         if (HELP.equals(action)) {
             String helpInfo =
                     "This is the part of the console app in which you can add, change and " +
-                            "remove user data from repository. The main commands are:\n" +
-                            "\tadd - adding new user;\n" +
-                            "\tget - getting user data from repository;\n" +
-                            "\tchange - changing user data in repository\n" +
-                            "\tremove - removing user from repository;\n" +
+                            "remove regions data from repository. The main commands are:\n" +
+                            "\tadd - adding new region;\n" +
+                            "\tget - getting region data from repository;\n" +
+                            "\tchange - changing region data in repository;\n" +
+                            "\tremove - removing region from repository;\n" +
                             "\n\tCalling \"help\" after each of commands calls the help`s information for the" +
                             " corresponding command.";
             System.out.println(helpInfo);

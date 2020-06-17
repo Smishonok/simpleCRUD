@@ -1,6 +1,6 @@
 package com.valentinNikolaev.simpleCRUD.repository;
 
-import com.valentinNikolaev.simpleCRUD.repository.FileRepository.FileRepositoryFactory;
+import com.valentinNikolaev.simpleCRUD.repository.fileRepository.FileRepositoryFactory;
 import org.apache.log4j.Logger;
 
 import java.io.File;
