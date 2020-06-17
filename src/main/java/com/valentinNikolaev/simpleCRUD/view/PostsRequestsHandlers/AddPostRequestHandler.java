@@ -32,39 +32,45 @@ public class AddPostRequestHandler extends PostRequestHandler {
     }
 
     private void processRequest(List<String> options) {
+        if (options.size() == 0) {
+            getErrorMessage();
+            return;
+        }
+
         String requestType = "";
         if (options.size() != 0) {
             requestType = options.get(0);
         }
 
-        List<String> requestOptions = getOptionsWithOutFirst(options);
-
-        switch (requestType) {
-            case HELP:
-                getHelpForAddingPostRequest();
-                break;
-            case USER_ID:
-                addPost(requestOptions);
-                break;
-            default:
-                System.out.println("Invalid request type. Please, check request type and try " +
-                                           "again, or take help information using \"" + ADD + " " +
-                                           HELP + "\".\n");
-                break;
+        if (options.size() != 0 && requestType.equals(HELP)) {
+            getHelpForAddingPostRequest();
+            return;
         }
+
+        addPost(options);
     }
 
     private void addPost(List<String> requestOptions) {
         if (checkRequestOptions(requestOptions)) {
             String userIdValue = requestOptions.get(0);
-            String content = requestOptions.get(1);
+            String content = getContent(requestOptions);
             this.postController.addPost(userIdValue,content);
         }
     }
 
+    private String getContent(List<String> requestOptions) {
+        StringBuilder postContent = new StringBuilder();
+        if (requestOptions.size() > 1) {
+            for (int i = 1; i < requestOptions.size(); i++) {
+                postContent.append(" ").append(requestOptions.get(i));
+            }
+        }
+        return postContent.toString();
+    }
+
     private boolean checkRequestOptions(List<String> requestOptions) {
         boolean isOptionsCorrect = true;
-        if (requestOptions.size() != 2) {
+        if (requestOptions.size() == 1) {
             System.out.println(
                     "Invalid request format. Please, check request format and try again, " +
                             "or get help information.");
@@ -84,6 +90,12 @@ public class AddPostRequestHandler extends PostRequestHandler {
             isOptionsCorrect = false;
         }
         return isOptionsCorrect;
+    }
+
+    private void getErrorMessage() {
+        System.out.println("Invalid request type. Please, check request type and try " +
+                                   "again, or take help information using \"" + ADD + " " +
+                                   HELP + "\".\n");
     }
 
     private boolean isUserExists(String userId) {

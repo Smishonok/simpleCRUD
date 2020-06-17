@@ -32,7 +32,6 @@ public class GetUserRequestHandler extends UserRequestHandler {
         if (options.size() != 0) {
             requestType = options.get(0);
         }
-
         List<String> requestOptions = getOptionsWithOutFirst(options);
 
         switch (requestType) {
@@ -40,7 +39,8 @@ public class GetUserRequestHandler extends UserRequestHandler {
                 getHelpForGettingUserDataRequest();
                 break;
             case ID:
-                if (requestOptions.size() != 1) {
+                System.out.println(requestOptions);
+                if (requestOptions.size() == 1) {
                     getUserByID(requestOptions.get(0));
                 } else {
                     System.out.println("Invalid request format.\n");

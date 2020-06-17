@@ -13,14 +13,24 @@ public final class RepositoryManager {
     static Logger log = Logger.getLogger(RepositoryManager.class.getName());
 
     private static final String DEFAULT_REPOSITORY_FACTORY = "FileRepository";
+    private static RepositoryFactory repositoryFactory;
 
     public static RepositoryFactory getRepositoryFactory() throws ClassNotFoundException {
         log.debug("Start to choose the repository factory.");
+
+        if (repositoryFactory == null) {
+            initRepositoryFactory();
+        }
+
+        log.debug("Chosen repository factory is: " + repositoryFactory.getClass().getName());
+        return repositoryFactory;
+    }
+
+    private static void initRepositoryFactory() throws ClassNotFoundException {
         String repositoryFactoryName = getRepositoryFactoryName();
 
         //Switch used in this case with a look into the future, if another repository
         //implementations will be added in this project.
-        RepositoryFactory repositoryFactory;
         switch (repositoryFactoryName) {
             case "FileRepository":
                 repositoryFactory = FileRepositoryFactory.getFactory();
@@ -28,9 +38,6 @@ public final class RepositoryManager {
             default:
                 throw new ClassNotFoundException();
         }
-
-        log.debug("Chosen repository factory is: " + repositoryFactory.getClass().getName());
-        return repositoryFactory;
     }
 
     private static String getRepositoryFactoryName() {

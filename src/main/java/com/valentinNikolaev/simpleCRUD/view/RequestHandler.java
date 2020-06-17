@@ -47,7 +47,7 @@ public abstract class RequestHandler {
 
     public List<String> getOptionsWithOutFirst(List<String> options) {
         RequestParametersProcessor stringProcessor = new RequestParametersProcessor();
-        return stringProcessor.getOptionsWithOutFirst(new ArrayList<>());
+        return stringProcessor.getOptionsWithOutFirst(options);
     }
 
     protected boolean isLong(String string) {
