@@ -72,9 +72,7 @@ public class Post implements Comparable<Post> {
         }
 
         Post comparingObj = (Post) obj;
-        return this.content.equals(comparingObj.content) && this.userId==comparingObj.getUserId() &&
-                this.created.equals(comparingObj.getDateOfCreation()) && this.updated.equals(
-                comparingObj.getDateOfLastUpdate());
+        return this.content.equals(comparingObj.content) && this.userId==comparingObj.getUserId();
     }
 
     public boolean equalsContent(Post post) {

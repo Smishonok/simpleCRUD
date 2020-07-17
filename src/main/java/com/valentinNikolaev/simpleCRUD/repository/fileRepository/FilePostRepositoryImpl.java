@@ -232,6 +232,7 @@ public class FilePostRepositoryImpl implements PostRepository {
                                                             StandardOpenOption.WRITE);
             for (String post : postsList) {
                 writer.write(post);
+                writer.flush();
             }
         } catch (IOException e) {
             log.error("Can`t write the post`s data into repository file: " + e.getMessage());
