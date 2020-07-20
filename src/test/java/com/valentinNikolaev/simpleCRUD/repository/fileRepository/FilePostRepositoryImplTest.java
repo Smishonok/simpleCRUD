@@ -45,7 +45,6 @@ public class FilePostRepositoryImplTest {
     private LocalDateTime dateTimeForPostConstructor = LocalDateTime.ofEpochSecond(epochSeconds, 0,
                                                                                    ZoneOffset.UTC);
 
-
     @Rule public ExpectedException thrown = ExpectedException.none();
 
     @BeforeClass
@@ -256,15 +255,39 @@ public class FilePostRepositoryImplTest {
 
         Stream.of(post1, post2, post3, post4,post5,post6).forEach(filePostRepository::add);
 
-        filePostRepository.getAll().forEach(System.out::println);
         filePostRepository.removePostsByUserId(secondUserId);
-        //filePostRepository.getAll().forEach(System.out::println);
 
         MatcherAssert.assertThat(filePostRepository.getAll()
                                                    .stream()
                                                    .map(Post::getUserId)
                                                    .collect(Collectors.toList()),
                                  CoreMatchers.everyItem(CoreMatchers.is(firstUserId)));
+    }
+
+    @Test
+    public void whenPostIsExistInRepositoryThenIsContainsReturnTrue() {
+        long searchablePostId = 346;
+
+        Post post1 = new Post(345L, 1L, "New comment");
+        Post post2 = new Post(searchablePostId, 1L, "Post for changing");
+        Post post3 = new Post(358L, 1L, "Some another post");
+
+        Stream.of(post1, post2, post3).forEach(filePostRepository::add);
+
+        Assert.assertTrue(filePostRepository.isContains(searchablePostId));
+    }
+
+    @Test
+    public void whenPostIsNotExistInRepositoryThenIsContainsReturnFalse() {
+        long searchablePostId = 246;
+
+        Post post1 = new Post(345L, 1L, "New comment");
+        Post post2 = new Post(346L, 1L, "Post for changing");
+        Post post3 = new Post(358L, 1L, "Some another post");
+
+        Stream.of(post1, post2, post3).forEach(filePostRepository::add);
+
+        Assert.assertFalse(filePostRepository.isContains(searchablePostId));
     }
 
     @AfterClass
@@ -284,7 +307,6 @@ public class FilePostRepositoryImplTest {
             System.err.println("Folder was not deleted: " + e.getMessage());
         }
     }
-
 }
 
 
