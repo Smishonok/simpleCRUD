@@ -11,6 +11,9 @@ import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.Writer;
+import java.nio.channels.Channel;
+import java.nio.channels.FileChannel;
+import java.nio.channels.SeekableByteChannel;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -43,7 +46,8 @@ public class FilePostRepositoryImpl implements PostRepository {
         createPostsRepository();
     }
 
-    public FilePostRepositoryImpl(Path repositoryRootPath, UserRepository userRepository) throws ClassNotFoundException {
+    public FilePostRepositoryImpl(Path repositoryRootPath, UserRepository userRepository)
+    throws ClassNotFoundException {
         postsRepositoryPath = repositoryRootPath.resolve("postsRepository.txt");
         this.userRepository = userRepository;
         createPostsRepository();
@@ -68,7 +72,7 @@ public class FilePostRepositoryImpl implements PostRepository {
     @Override
     public Post add(Post post) {
         log.debug("The operation of adding the new post with id: " + post.getId() +
-                          " in the repository is started.");
+                  " in the repository is started.");
         try (Writer writer = Files.newBufferedWriter(postsRepositoryPath, Charset.forName("UTF-8"),
                                                      StandardOpenOption.WRITE,
                                                      StandardOpenOption.APPEND)) {
@@ -79,25 +83,27 @@ public class FilePostRepositoryImpl implements PostRepository {
         }
         Post addedPost = this.get(post.getId());
         log.debug("The operation of adding the new post with id: " + addedPost.getId() +
-                          " in the repository is started.");
+                  " in the repository is started.");
         return addedPost;
     }
 
     @Override
     public Post get(Long postId) {
         log.debug("The operation of getting the post with id: " + postId +
-                          " from the repository is " + "started.");
+                  " from the repository is " + "started.");
         Optional<Post> post = Optional.empty();
         try {
-            post = Files.lines(postsRepositoryPath).filter(
-                    postData->parsePostId(postData) == postId).map(this::parsePost).findFirst();
+            post = Files.lines(postsRepositoryPath)
+                        .filter(postData->parsePostId(postData) == postId)
+                        .map(this::parsePost)
+                        .findFirst();
         } catch (IOException e) {
             log.error("Can`t read repository file with posts data: " + e.getMessage());
         }
 
         if (post.isPresent()) {
             log.debug("The post wih id: " + post.get().getId() +
-                              " was founded in repository and returned by the request.");
+                      " was founded in repository and returned by the request.");
             return post.get();
         } else {
             throw new IllegalArgumentException(
@@ -108,7 +114,7 @@ public class FilePostRepositoryImpl implements PostRepository {
     @Override
     public Post change(Post post) {
         log.debug("The operation of changing content of post with id: " + post.getId() +
-                          "is started.");
+                  "is started.");
         List<Post> postsList = getAll();
 
         int indexOfPostInPostList = - 1;
@@ -124,7 +130,8 @@ public class FilePostRepositoryImpl implements PostRepository {
         }
 
         postsList.set(indexOfPostInPostList, post);
-        rewriteInRepository(postsList.stream().map(this::createStringWithPostData)
+        rewriteInRepository(postsList.stream()
+                                     .map(this::createStringWithPostData)
                                      .collect(Collectors.toList()));
 
         Post changedPost = this.get(post.getId());
@@ -135,7 +142,7 @@ public class FilePostRepositoryImpl implements PostRepository {
     @Override
     public boolean remove(Long postId) {
         log.debug("The operation of removing post with id: " + postId +
-                          " from repository is started.");
+                  " from repository is started.");
         List<String> postsList = getPostsListExcludePostWithId(postId);
         rewriteInRepository(postsList);
 
@@ -147,7 +154,8 @@ public class FilePostRepositoryImpl implements PostRepository {
     @Override
     public List<Post> getAll() {
         log.debug("The operation of getting the list with all posts from repository is started.");
-        List<Post> postsList = getPostsListExcludePostWithId(0).stream().map(this::parsePost)
+        List<Post> postsList = getPostsListExcludePostWithId(0).stream()
+                                                               .map(this::parsePost)
                                                                .collect(Collectors.toList());
         log.debug(
                 "The operation was ended. The size of returned posts list is: " + postsList.size());
@@ -184,24 +192,25 @@ public class FilePostRepositoryImpl implements PostRepository {
     @Override
     public List<Post> getPostsByUserId(Long userId) {
         log.debug("The operation of getting list of posts mad by the user with id: " + userId +
-                          "is started.");
+                  "is started.");
         List<Post> userPostsList = new ArrayList<>();
         try {
-            userPostsList = Files.lines(postsRepositoryPath).filter(
-                    postData->parseUserId(postData) == userId).map(this::parsePost).collect(
-                    Collectors.toList());
+            userPostsList = Files.lines(postsRepositoryPath)
+                                 .filter(postData->parseUserId(postData) == userId)
+                                 .map(this::parsePost)
+                                 .collect(Collectors.toList());
         } catch (IOException e) {
             log.error("Can`t read repository file with posts data: " + e.getMessage());
         }
         log.debug("The operation was ended. The size of list with users`s posts is: " +
-                          userPostsList.size());
+                  userPostsList.size());
         return userPostsList;
     }
 
     @Override
     public boolean removePostsByUserId(Long userId) {
         log.debug("The operation of removing posts, which created by user with id: " + userId +
-                          ", is started.");
+                  ", is started.");
         List<String> postsList = getPostsListWithOutCreatedByUser(userId);
         rewriteInRepository(postsList);
 
@@ -213,11 +222,11 @@ public class FilePostRepositoryImpl implements PostRepository {
     @Override
     public boolean isContains(Long postId) {
         log.debug("The operation of checking existence in repository of post with id: " + postId +
-                          " " + "is started.");
+                  " " + "is started.");
         boolean isExists = false;
         try {
-            isExists = Files.lines(postsRepositoryPath).anyMatch(
-                    postData->parsePostId(postData) == postId);
+            isExists = Files.lines(postsRepositoryPath)
+                            .anyMatch(postData->parsePostId(postData) == postId);
         } catch (IOException e) {
             log.error("Can`t read repository file with posts data: " + e.getMessage());
         }
@@ -229,7 +238,8 @@ public class FilePostRepositoryImpl implements PostRepository {
         try {
             BufferedWriter writer = Files.newBufferedWriter(postsRepositoryPath,
                                                             Charset.forName("UTF-8"),
-                                                            StandardOpenOption.WRITE);
+                                                            StandardOpenOption.WRITE,
+                                                            StandardOpenOption.TRUNCATE_EXISTING);
             for (String post : postsList) {
                 writer.write(post);
                 writer.flush();
@@ -242,8 +252,10 @@ public class FilePostRepositoryImpl implements PostRepository {
     private List<String> getPostsListExcludePostWithId(long id) {
         List<String> postsList = new ArrayList<>();
         try {
-            postsList = Files.lines(postsRepositoryPath).filter(
-                    postData->parsePostId(postData) != id).collect(Collectors.toList());
+            postsList = Files.lines(postsRepositoryPath)
+                             .filter(postData->parsePostId(postData) != id)
+                             .map(post->post + "\n")
+                             .collect(Collectors.toList());
         } catch (IOException e) {
             log.error("Can`t read repository file with posts data: " + e.getMessage());
         }
@@ -253,8 +265,10 @@ public class FilePostRepositoryImpl implements PostRepository {
     private List<String> getPostsListWithOutCreatedByUser(long userId) {
         List<String> postsList = new ArrayList<>();
         try {
-            postsList = Files.lines(postsRepositoryPath).filter(
-                    postData->parseUserId(postData) != userId).collect(Collectors.toList());
+            postsList = Files.lines(postsRepositoryPath)
+                             .filter(postData->parseUserId(postData) != userId)
+                             .map(post->post + "\n")
+                             .collect(Collectors.toList());
         } catch (IOException e) {
             log.error("Can`t read repository file with posts data: " + e.getMessage());
         }
@@ -263,18 +277,16 @@ public class FilePostRepositoryImpl implements PostRepository {
 
     private String createStringWithPostData(Post post) {
         long   postId  = post.getId();
-        long   userId    = post.getUserId();
+        long   userId  = post.getUserId();
         String content = post.getContent();
 
-        long creationTimeInEpochSeconds = post.getDateOfCreation().toEpochSecond(
-                ZoneOffset.UTC);
-        long updatingTimeInEpochSeconds = post.getDateOfLastUpdate().toEpochSecond(
-                ZoneOffset.UTC);
+        long creationTimeInEpochSeconds = post.getDateOfCreation().toEpochSecond(ZoneOffset.UTC);
+        long updatingTimeInEpochSeconds = post.getDateOfLastUpdate().toEpochSecond(ZoneOffset.UTC);
 
 
         return POST_ID + postId + ";" + USER_ID + userId + ";" + CREATION_DATE +
-                creationTimeInEpochSeconds + ";" + UPDATING_DATE + updatingTimeInEpochSeconds +
-                ";" + POST_CONTENT + content + ";\n";
+               creationTimeInEpochSeconds + ";" + UPDATING_DATE + updatingTimeInEpochSeconds + ";" +
+               POST_CONTENT + content + ";\n";
     }
 
     private long parsePostId(String postData) {
@@ -312,8 +324,7 @@ public class FilePostRepositoryImpl implements PostRepository {
             return LocalDateTime.ofEpochSecond(scanner.nextLong(), 0, ZoneOffset.UTC);
         } else {
             throw new IllegalArgumentException("Invalid data. The string does not contain the" +
-                                                       dateType.toLowerCase().replace(":", "") +
-                                                       ".");
+                                               dateType.toLowerCase().replace(":", "") + ".");
         }
     }
 
@@ -334,7 +345,7 @@ public class FilePostRepositoryImpl implements PostRepository {
         }
 
         long          postId       = parsePostId(postData);
-        long          userId         = parseUserId(postData);
+        long          userId       = parseUserId(postData);
         LocalDateTime creationDate = parseDateTime(CREATION_DATE, postData);
         LocalDateTime updatingDate = parseDateTime(UPDATING_DATE, postData);
         String        content      = parseContent(postData);
